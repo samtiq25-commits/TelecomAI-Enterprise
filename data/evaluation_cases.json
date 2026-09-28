@@ -1,0 +1,18 @@
+[
+  {
+    "case_id": "NET-001",
+    "issue": "My internet is very slow and calls keep dropping.",
+    "tower_id": "TWR-1024",
+    "expected_root_cause": "equipment_or_configuration_degradation",
+    "expected_verification": "PARTIAL_CONFIDENCE",
+    "expected_outcome": "NOT_RECOVERED"
+  },
+  {
+    "case_id": "NET-002",
+    "issue": "Network performance is degraded with high latency.",
+    "tower_id": "TWR-1018",
+    "expected_root_cause": "network_degradation",
+    "expected_verification": "SUPPORTED",
+    "expected_outcome": "RESOLVED"
+  }
+]

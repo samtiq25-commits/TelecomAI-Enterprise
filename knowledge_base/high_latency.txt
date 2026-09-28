@@ -1,0 +1,1 @@
+For high latency, check traffic, packet loss, backhaul links, neighboring towers, CPU and memory, plus recent maintenance or configuration events.

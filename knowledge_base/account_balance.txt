@@ -1,0 +1,1 @@
+To check account balance, customers can use the telecom provider's official mobile application, USSD balance inquiry code, or customer support. Prepaid customers should check their remaining account credit, data allowance, and validity. The exact USSD code depends on the telecom provider.

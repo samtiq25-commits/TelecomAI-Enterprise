@@ -1,0 +1,151 @@
+timestamp,tower_id,event_type,severity,backhaul_utilization,event_name,description
+2026-09-08 17:47:05.601247,TWR-1020,BACKHAUL,NORMAL,56.98333691805854,,Backhaul utilization recorded at 57.0%.
+2026-09-12 04:47:05.601247,TWR-1023,BACKHAUL,NORMAL,84.26116183805672,,Backhaul utilization recorded at 84.3%.
+2026-09-09 07:47:05.601247,TWR-1007,CONFIGURATION,MEDIUM,,Routing update,Routing update recorded.
+2026-09-17 23:47:05.601247,TWR-1023,BACKHAUL,NORMAL,46.70653615548567,,Backhaul utilization recorded at 46.7%.
+2026-09-15 08:47:05.601247,TWR-1018,BACKHAUL,NORMAL,73.01167741741605,,Backhaul utilization recorded at 73.0%.
+2026-09-08 07:47:05.601247,TWR-1000,BACKHAUL,NORMAL,62.74783654334094,,Backhaul utilization recorded at 62.7%.
+2026-09-17 02:47:05.601247,TWR-1007,CONFIGURATION,MEDIUM,,Routing update,Routing update recorded.
+2026-09-17 23:47:05.601247,TWR-1006,MAINTENANCE,NORMAL,,Equipment inspection,Equipment inspection performed.
+2026-09-12 06:47:05.601247,TWR-1018,BACKHAUL,NORMAL,52.12750256759227,,Backhaul utilization recorded at 52.1%.
+2026-09-09 17:47:05.601247,TWR-1024,CONFIGURATION,LOW,,Network parameter update,Network parameter update recorded.
+2026-09-09 15:47:05.601247,TWR-1008,BACKHAUL,NORMAL,68.13933987982423,,Backhaul utilization recorded at 68.1%.
+2026-09-13 12:47:05.601247,TWR-1024,BACKHAUL,NORMAL,60.71779882858049,,Backhaul utilization recorded at 60.7%.
+2026-09-14 10:47:05.601247,TWR-1002,BACKHAUL,NORMAL,37.31380194958213,,Backhaul utilization recorded at 37.3%.
+2026-09-13 16:47:05.601247,TWR-1011,CONFIGURATION,NORMAL,,QoS configuration update,QoS configuration update recorded.
+2026-09-16 03:47:05.601247,TWR-1023,CONFIGURATION,LOW,,Routing update,Routing update recorded.
+2026-09-18 02:47:05.601247,TWR-1002,MAINTENANCE,LOW,,Link maintenance,Link maintenance performed.
+2026-09-07 19:47:05.601247,TWR-1006,BACKHAUL,NORMAL,67.76297994449469,,Backhaul utilization recorded at 67.8%.
+2026-09-11 04:47:05.601247,TWR-1021,MAINTENANCE,NORMAL,,Preventive maintenance,Preventive maintenance performed.
+2026-09-08 11:47:05.601247,TWR-1027,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-14 02:47:05.601247,TWR-1020,BACKHAUL,NORMAL,49.517192168983435,,Backhaul utilization recorded at 49.5%.
+2026-09-13 21:47:05.601247,TWR-1011,BACKHAUL,NORMAL,66.83725509782313,,Backhaul utilization recorded at 66.8%.
+2026-09-12 00:47:05.601247,TWR-1021,CONFIGURATION,MEDIUM,,Routing update,Routing update recorded.
+2026-09-09 23:47:05.601247,TWR-1020,CONFIGURATION,NORMAL,,Radio configuration update,Radio configuration update recorded.
+2026-09-14 10:47:05.601247,TWR-1014,MAINTENANCE,LOW,,Equipment inspection,Equipment inspection performed.
+2026-09-07 12:47:05.601247,TWR-1010,BACKHAUL,NORMAL,63.09265155099696,,Backhaul utilization recorded at 63.1%.
+2026-09-07 00:47:05.601247,TWR-1026,MAINTENANCE,NORMAL,,Routine service,Routine service performed.
+2026-09-10 20:47:05.601247,TWR-1002,CONFIGURATION,NORMAL,,QoS configuration update,QoS configuration update recorded.
+2026-09-16 23:47:05.601247,TWR-1020,MAINTENANCE,NORMAL,,Routine service,Routine service performed.
+2026-09-09 07:47:05.601247,TWR-1008,BACKHAUL,NORMAL,71.45791723104232,,Backhaul utilization recorded at 71.5%.
+2026-09-18 07:47:05.601247,TWR-1023,CONFIGURATION,MEDIUM,,QoS configuration update,QoS configuration update recorded.
+2026-09-15 11:47:05.601247,TWR-1018,CONFIGURATION,LOW,,Network parameter update,Network parameter update recorded.
+2026-09-09 06:47:05.601247,TWR-1007,CONFIGURATION,NORMAL,,Network parameter update,Network parameter update recorded.
+2026-09-07 08:47:05.601247,TWR-1024,BACKHAUL,NORMAL,30.913663919427087,,Backhaul utilization recorded at 30.9%.
+2026-09-09 17:47:05.601247,TWR-1004,CONFIGURATION,MEDIUM,,Network parameter update,Network parameter update recorded.
+2026-09-14 13:47:05.601247,TWR-1002,MAINTENANCE,LOW,,Routine service,Routine service performed.
+2026-09-18 03:47:05.601247,TWR-1008,BACKHAUL,NORMAL,50.136517376934485,,Backhaul utilization recorded at 50.1%.
+2026-09-08 18:47:05.601247,TWR-1021,CONFIGURATION,MEDIUM,,QoS configuration update,QoS configuration update recorded.
+2026-09-08 17:47:05.601247,TWR-1010,MAINTENANCE,NORMAL,,Routine service,Routine service performed.
+2026-09-06 09:47:05.601247,TWR-1014,CONFIGURATION,MEDIUM,,QoS configuration update,QoS configuration update recorded.
+2026-09-10 03:47:05.601247,TWR-1024,CONFIGURATION,MEDIUM,,Routing update,Routing update recorded.
+2026-09-17 03:47:05.601247,TWR-1009,CONFIGURATION,NORMAL,,Radio configuration update,Radio configuration update recorded.
+2026-09-09 18:47:05.601247,TWR-1011,CONFIGURATION,MEDIUM,,Routing update,Routing update recorded.
+2026-09-16 18:47:05.601247,TWR-1010,BACKHAUL,NORMAL,66.61168111808016,,Backhaul utilization recorded at 66.6%.
+2026-09-14 01:47:05.601247,TWR-1003,MAINTENANCE,NORMAL,,Equipment inspection,Equipment inspection performed.
+2026-09-18 10:47:05.601247,TWR-1007,BACKHAUL,HIGH,100.0,,Backhaul utilization recorded at 100.0%.
+2026-09-16 16:47:05.601247,TWR-1002,BACKHAUL,NORMAL,67.08234337218123,,Backhaul utilization recorded at 67.1%.
+2026-09-17 16:47:05.601247,TWR-1024,BACKHAUL,NORMAL,58.39949478775712,,Backhaul utilization recorded at 58.4%.
+2026-09-16 11:47:05.601247,TWR-1004,CONFIGURATION,LOW,,Radio configuration update,Radio configuration update recorded.
+2026-09-15 08:47:05.601247,TWR-1016,BACKHAUL,NORMAL,78.09692860640268,,Backhaul utilization recorded at 78.1%.
+2026-09-17 20:47:05.601247,TWR-1029,CONFIGURATION,MEDIUM,,Radio configuration update,Radio configuration update recorded.
+2026-09-14 20:47:05.601247,TWR-1009,CONFIGURATION,LOW,,QoS configuration update,QoS configuration update recorded.
+2026-09-17 08:47:05.601247,TWR-1028,MAINTENANCE,NORMAL,,Preventive maintenance,Preventive maintenance performed.
+2026-09-07 16:47:05.601247,TWR-1007,MAINTENANCE,LOW,,Preventive maintenance,Preventive maintenance performed.
+2026-09-11 05:47:05.601247,TWR-1017,CONFIGURATION,NORMAL,,Radio configuration update,Radio configuration update recorded.
+2026-09-07 14:47:05.601247,TWR-1002,BACKHAUL,NORMAL,56.163909511123464,,Backhaul utilization recorded at 56.2%.
+2026-09-07 00:47:05.601247,TWR-1002,MAINTENANCE,LOW,,Preventive maintenance,Preventive maintenance performed.
+2026-09-12 06:47:05.601247,TWR-1007,CONFIGURATION,NORMAL,,Network parameter update,Network parameter update recorded.
+2026-09-09 03:47:05.601247,TWR-1017,CONFIGURATION,NORMAL,,Network parameter update,Network parameter update recorded.
+2026-09-16 10:47:05.601247,TWR-1025,MAINTENANCE,NORMAL,,Equipment inspection,Equipment inspection performed.
+2026-09-15 12:47:05.601247,TWR-1003,MAINTENANCE,NORMAL,,Routine service,Routine service performed.
+2026-09-07 11:47:05.601247,TWR-1014,CONFIGURATION,NORMAL,,Routing update,Routing update recorded.
+2026-09-13 13:47:05.601247,TWR-1012,BACKHAUL,NORMAL,71.48894041094145,,Backhaul utilization recorded at 71.5%.
+2026-09-10 10:47:05.601247,TWR-1007,BACKHAUL,NORMAL,65.77993455463843,,Backhaul utilization recorded at 65.8%.
+2026-09-15 21:47:05.601247,TWR-1017,BACKHAUL,NORMAL,81.07996577358348,,Backhaul utilization recorded at 81.1%.
+2026-09-10 05:47:05.601247,TWR-1013,MAINTENANCE,NORMAL,,Routine service,Routine service performed.
+2026-09-07 22:47:05.601247,TWR-1027,MAINTENANCE,NORMAL,,Preventive maintenance,Preventive maintenance performed.
+2026-09-17 20:47:05.601247,TWR-1020,BACKHAUL,NORMAL,74.92433618556207,,Backhaul utilization recorded at 74.9%.
+2026-09-11 09:47:05.601247,TWR-1002,BACKHAUL,NORMAL,57.812509603519395,,Backhaul utilization recorded at 57.8%.
+2026-09-16 16:47:05.601247,TWR-1013,MAINTENANCE,NORMAL,,Equipment inspection,Equipment inspection performed.
+2026-09-07 14:47:05.601247,TWR-1028,BACKHAUL,NORMAL,42.46907880990932,,Backhaul utilization recorded at 42.5%.
+2026-09-06 09:47:05.601247,TWR-1012,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-15 08:47:05.601247,TWR-1009,CONFIGURATION,NORMAL,,Network parameter update,Network parameter update recorded.
+2026-09-12 15:47:05.601247,TWR-1006,BACKHAUL,NORMAL,48.961991467313275,,Backhaul utilization recorded at 49.0%.
+2026-09-18 16:47:05.601247,TWR-1001,CONFIGURATION,MEDIUM,,Routing update,Routing update recorded.
+2026-09-07 13:47:05.601247,TWR-1010,BACKHAUL,NORMAL,69.44600671360486,,Backhaul utilization recorded at 69.4%.
+2026-09-16 12:47:05.601247,TWR-1018,CONFIGURATION,NORMAL,,Radio configuration update,Radio configuration update recorded.
+2026-09-08 01:47:05.601247,TWR-1016,BACKHAUL,NORMAL,64.22322671372997,,Backhaul utilization recorded at 64.2%.
+2026-09-07 18:47:05.601247,TWR-1002,CONFIGURATION,LOW,,Radio configuration update,Radio configuration update recorded.
+2026-09-18 11:47:05.601247,TWR-1003,BACKHAUL,NORMAL,65.40924662024156,,Backhaul utilization recorded at 65.4%.
+2026-09-07 04:47:05.601247,TWR-1018,CONFIGURATION,LOW,,Routing update,Routing update recorded.
+2026-09-18 18:47:05.601247,TWR-1021,CONFIGURATION,LOW,,QoS configuration update,QoS configuration update recorded.
+2026-09-13 00:47:05.601247,TWR-1006,BACKHAUL,NORMAL,68.8123601520236,,Backhaul utilization recorded at 68.8%.
+2026-09-14 18:47:05.601247,TWR-1008,BACKHAUL,NORMAL,52.71721759445772,,Backhaul utilization recorded at 52.7%.
+2026-09-12 17:47:05.601247,TWR-1021,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-16 02:47:05.601247,TWR-1000,CONFIGURATION,NORMAL,,Routing update,Routing update recorded.
+2026-09-10 21:47:05.601247,TWR-1017,CONFIGURATION,NORMAL,,QoS configuration update,QoS configuration update recorded.
+2026-09-13 18:47:05.601247,TWR-1029,BACKHAUL,NORMAL,63.433073395388156,,Backhaul utilization recorded at 63.4%.
+2026-09-11 13:47:05.601247,TWR-1028,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-17 22:47:05.601247,TWR-1014,CONFIGURATION,MEDIUM,,QoS configuration update,QoS configuration update recorded.
+2026-09-17 14:47:05.601247,TWR-1025,BACKHAUL,NORMAL,64.84999468024652,,Backhaul utilization recorded at 64.8%.
+2026-09-18 03:47:05.601247,TWR-1021,MAINTENANCE,NORMAL,,Preventive maintenance,Preventive maintenance performed.
+2026-09-08 19:47:05.601247,TWR-1008,BACKHAUL,NORMAL,43.43429142359045,,Backhaul utilization recorded at 43.4%.
+2026-09-18 03:47:05.601247,TWR-1023,BACKHAUL,NORMAL,55.82401206571741,,Backhaul utilization recorded at 55.8%.
+2026-09-12 08:47:05.601247,TWR-1008,CONFIGURATION,MEDIUM,,Radio configuration update,Radio configuration update recorded.
+2026-09-10 16:47:05.601247,TWR-1010,CONFIGURATION,MEDIUM,,QoS configuration update,QoS configuration update recorded.
+2026-09-11 16:47:05.601247,TWR-1015,BACKHAUL,NORMAL,70.87141277939531,,Backhaul utilization recorded at 70.9%.
+2026-09-15 08:47:05.601247,TWR-1002,MAINTENANCE,NORMAL,,Preventive maintenance,Preventive maintenance performed.
+2026-09-09 02:47:05.601247,TWR-1010,CONFIGURATION,NORMAL,,QoS configuration update,QoS configuration update recorded.
+2026-09-15 18:47:05.601247,TWR-1023,CONFIGURATION,MEDIUM,,Network parameter update,Network parameter update recorded.
+2026-09-08 17:47:05.601247,TWR-1000,BACKHAUL,NORMAL,75.48462009229677,,Backhaul utilization recorded at 75.5%.
+2026-09-09 12:47:05.601247,TWR-1028,CONFIGURATION,LOW,,Routing update,Routing update recorded.
+2026-09-18 02:47:05.601247,TWR-1018,BACKHAUL,NORMAL,52.883307036988185,,Backhaul utilization recorded at 52.9%.
+2026-09-09 01:47:05.601247,TWR-1013,BACKHAUL,NORMAL,72.49142991461704,,Backhaul utilization recorded at 72.5%.
+2026-09-14 02:47:05.601247,TWR-1009,BACKHAUL,NORMAL,55.78329203736885,,Backhaul utilization recorded at 55.8%.
+2026-09-13 23:47:05.601247,TWR-1028,BACKHAUL,NORMAL,51.81372027365848,,Backhaul utilization recorded at 51.8%.
+2026-09-11 15:47:05.601247,TWR-1021,CONFIGURATION,LOW,,Routing update,Routing update recorded.
+2026-09-18 06:47:05.601247,TWR-1024,MAINTENANCE,NORMAL,,Equipment inspection,Equipment inspection performed.
+2026-09-09 19:47:05.601247,TWR-1027,BACKHAUL,HIGH,93.65270514161568,,Backhaul utilization recorded at 93.7%.
+2026-09-15 03:47:05.601247,TWR-1028,BACKHAUL,NORMAL,58.774003884232414,,Backhaul utilization recorded at 58.8%.
+2026-09-13 10:47:05.601247,TWR-1005,MAINTENANCE,NORMAL,,Equipment inspection,Equipment inspection performed.
+2026-09-08 15:47:05.601247,TWR-1005,MAINTENANCE,NORMAL,,Preventive maintenance,Preventive maintenance performed.
+2026-09-10 14:47:05.601247,TWR-1007,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-11 04:47:05.601247,TWR-1026,BACKHAUL,NORMAL,42.87728873290701,,Backhaul utilization recorded at 42.9%.
+2026-09-10 10:47:05.601247,TWR-1000,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-07 19:47:05.601247,TWR-1027,MAINTENANCE,LOW,,Link maintenance,Link maintenance performed.
+2026-09-14 20:47:05.601247,TWR-1016,CONFIGURATION,NORMAL,,QoS configuration update,QoS configuration update recorded.
+2026-09-11 21:47:05.601247,TWR-1003,BACKHAUL,NORMAL,58.42947337678758,,Backhaul utilization recorded at 58.4%.
+2026-09-11 23:47:05.601247,TWR-1018,BACKHAUL,NORMAL,61.00615823917421,,Backhaul utilization recorded at 61.0%.
+2026-09-15 14:47:05.601247,TWR-1003,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-17 05:47:05.601247,TWR-1019,BACKHAUL,NORMAL,78.6908507206569,,Backhaul utilization recorded at 78.7%.
+2026-09-18 15:47:05.601247,TWR-1012,BACKHAUL,NORMAL,59.61514575045659,,Backhaul utilization recorded at 59.6%.
+2026-09-07 06:47:05.601247,TWR-1008,CONFIGURATION,NORMAL,,Network parameter update,Network parameter update recorded.
+2026-09-17 19:47:05.601247,TWR-1016,CONFIGURATION,LOW,,Radio configuration update,Radio configuration update recorded.
+2026-09-07 19:47:05.601247,TWR-1013,CONFIGURATION,MEDIUM,,QoS configuration update,QoS configuration update recorded.
+2026-09-08 23:47:05.601247,TWR-1010,CONFIGURATION,MEDIUM,,QoS configuration update,QoS configuration update recorded.
+2026-09-15 01:47:05.601247,TWR-1009,MAINTENANCE,LOW,,Routine service,Routine service performed.
+2026-09-18 03:47:05.601247,TWR-1009,BACKHAUL,NORMAL,70.6759648898788,,Backhaul utilization recorded at 70.7%.
+2026-09-15 07:47:05.601247,TWR-1006,CONFIGURATION,MEDIUM,,Network parameter update,Network parameter update recorded.
+2026-09-10 01:47:05.601247,TWR-1023,CONFIGURATION,LOW,,QoS configuration update,QoS configuration update recorded.
+2026-09-06 08:47:05.601247,TWR-1017,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-18 16:47:05.601247,TWR-1013,CONFIGURATION,LOW,,QoS configuration update,QoS configuration update recorded.
+2026-09-15 18:47:05.601247,TWR-1014,CONFIGURATION,MEDIUM,,Radio configuration update,Radio configuration update recorded.
+2026-09-09 22:47:05.601247,TWR-1015,CONFIGURATION,LOW,,Routing update,Routing update recorded.
+2026-09-13 11:47:05.601247,TWR-1016,BACKHAUL,NORMAL,80.94192195696903,,Backhaul utilization recorded at 80.9%.
+2026-09-11 08:47:05.601247,TWR-1026,CONFIGURATION,NORMAL,,QoS configuration update,QoS configuration update recorded.
+2026-09-10 13:47:05.601247,TWR-1025,BACKHAUL,NORMAL,56.2483296112556,,Backhaul utilization recorded at 56.2%.
+2026-09-07 07:47:05.601247,TWR-1000,BACKHAUL,NORMAL,69.36371481532377,,Backhaul utilization recorded at 69.4%.
+2026-09-07 21:47:05.601247,TWR-1015,MAINTENANCE,LOW,,Routine service,Routine service performed.
+2026-09-10 11:47:05.601247,TWR-1018,CONFIGURATION,LOW,,Network parameter update,Network parameter update recorded.
+2026-09-11 12:47:05.601247,TWR-1012,BACKHAUL,NORMAL,64.05561365443941,,Backhaul utilization recorded at 64.1%.
+2026-09-06 10:47:05.601247,TWR-1020,BACKHAUL,NORMAL,68.37869967653396,,Backhaul utilization recorded at 68.4%.
+2026-09-15 09:47:05.601247,TWR-1024,BACKHAUL,NORMAL,66.5138981604868,,Backhaul utilization recorded at 66.5%.
+2026-09-17 09:47:05.601247,TWR-1005,MAINTENANCE,LOW,,Preventive maintenance,Preventive maintenance performed.
+2026-09-08 22:47:05.601247,TWR-1007,MAINTENANCE,NORMAL,,Equipment inspection,Equipment inspection performed.
+2026-09-17 15:47:05.601247,TWR-1021,CONFIGURATION,LOW,,QoS configuration update,QoS configuration update recorded.
+2026-09-17 02:47:05.601247,TWR-1019,MAINTENANCE,NORMAL,,Routine service,Routine service performed.
+2026-09-16 11:47:05.601247,TWR-1023,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.
+2026-09-12 05:47:05.601247,TWR-1026,CONFIGURATION,MEDIUM,,Network parameter update,Network parameter update recorded.
+2026-09-12 04:47:05.601247,TWR-1007,MAINTENANCE,LOW,,Preventive maintenance,Preventive maintenance performed.
+2026-09-11 08:47:05.601247,TWR-1009,MAINTENANCE,NORMAL,,Link maintenance,Link maintenance performed.

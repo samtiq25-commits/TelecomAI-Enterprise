@@ -1,0 +1,1 @@
+Network congestion causes increased latency, packet loss and degraded throughput. Check traffic trends, neighboring towers and backhaul utilization before escalation.

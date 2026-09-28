@@ -1,0 +1,601 @@
+customer_id,complaint,location,service_type,complaint_category,severity,resolution_time
+CUST-90000,My calls keep dropping,Area-13,Postpaid,Call Drops,LOW,185
+CUST-90001,I cannot send text messages,Area-11,Enterprise,SMS Failure,LOW,111
+CUST-90002,Mobile data speed has dropped badly,Area-13,Prepaid,Internet Speed,LOW,224
+CUST-90003,The package benefits are missing,Area-10,Enterprise,Package Issues,MEDIUM,223
+CUST-90004,My internet package is not active,Area-16,Postpaid,Package Issues,MEDIUM,74
+CUST-90005,The package benefits are missing,Area-11,Enterprise,Package Issues,MEDIUM,190
+CUST-90006,There is no network signal,Area-20,Prepaid,No Network,HIGH,237
+CUST-90007,My internet package is not active,Area-3,Enterprise,Package Issues,MEDIUM,39
+CUST-90008,Network service is unavailable in my area,Area-13,Broadband,Network Outage,LOW,59
+CUST-90009,Network service is unavailable in my area,Area-9,Enterprise,Network Outage,LOW,69
+CUST-90010,My calls keep dropping,Area-12,Postpaid,Call Drops,MEDIUM,171
+CUST-90011,My calls keep dropping,Area-25,Prepaid,Call Drops,HIGH,68
+CUST-90012,SMS messages are not going through,Area-8,Postpaid,SMS Failure,HIGH,126
+CUST-90013,My calls keep dropping,Area-15,Broadband,Call Drops,MEDIUM,201
+CUST-90014,I was charged incorrectly,Area-25,Postpaid,Billing,LOW,84
+CUST-90015,Calls disconnect after a few minutes,Area-19,Enterprise,Call Drops,MEDIUM,106
+CUST-90016,SMS messages are not going through,Area-4,Broadband,SMS Failure,LOW,222
+CUST-90017,My calls keep dropping,Area-12,Enterprise,Call Drops,HIGH,174
+CUST-90018,My bill is higher than expected,Area-1,Enterprise,Billing,LOW,215
+CUST-90019,Network service is unavailable in my area,Area-21,Enterprise,Network Outage,LOW,186
+CUST-90020,My phone shows no service,Area-20,Enterprise,No Network,MEDIUM,124
+CUST-90021,The package benefits are missing,Area-11,Postpaid,Package Issues,HIGH,217
+CUST-90022,Calls disconnect after a few minutes,Area-8,Enterprise,Call Drops,LOW,150
+CUST-90023,The package benefits are missing,Area-28,Broadband,Package Issues,LOW,51
+CUST-90024,Network service is unavailable in my area,Area-11,Broadband,Network Outage,LOW,230
+CUST-90025,My SIM stopped working,Area-3,Postpaid,SIM Problems,MEDIUM,189
+CUST-90026,My internet package is not active,Area-23,Enterprise,Package Issues,MEDIUM,170
+CUST-90027,The whole area seems to have an outage,Area-3,Broadband,Network Outage,MEDIUM,61
+CUST-90028,The package benefits are missing,Area-22,Broadband,Package Issues,MEDIUM,126
+CUST-90029,My bill is higher than expected,Area-12,Enterprise,Billing,MEDIUM,74
+CUST-90030,My SIM stopped working,Area-24,Postpaid,SIM Problems,LOW,85
+CUST-90031,My calls keep dropping,Area-7,Postpaid,Call Drops,MEDIUM,194
+CUST-90032,Network service is unavailable in my area,Area-4,Postpaid,Network Outage,LOW,80
+CUST-90033,I cannot send text messages,Area-1,Postpaid,SMS Failure,MEDIUM,75
+CUST-90034,4G is very slow in my area,Area-10,Postpaid,Internet Speed,CRITICAL,168
+CUST-90035,The whole area seems to have an outage,Area-19,Broadband,Network Outage,LOW,125
+CUST-90036,The whole area seems to have an outage,Area-2,Broadband,Network Outage,MEDIUM,225
+CUST-90037,The whole area seems to have an outage,Area-13,Enterprise,Network Outage,LOW,23
+CUST-90038,4G is very slow in my area,Area-10,Prepaid,Internet Speed,LOW,68
+CUST-90039,Calls disconnect after a few minutes,Area-20,Postpaid,Call Drops,MEDIUM,203
+CUST-90040,The package benefits are missing,Area-10,Enterprise,Package Issues,MEDIUM,83
+CUST-90041,4G is very slow in my area,Area-4,Postpaid,Internet Speed,MEDIUM,165
+CUST-90042,SMS messages are not going through,Area-6,Postpaid,SMS Failure,LOW,49
+CUST-90043,Calls disconnect after a few minutes,Area-15,Enterprise,Call Drops,LOW,79
+CUST-90044,4G is very slow in my area,Area-10,Enterprise,Internet Speed,LOW,23
+CUST-90045,SMS messages are not going through,Area-14,Prepaid,SMS Failure,HIGH,144
+CUST-90046,I cannot send text messages,Area-27,Postpaid,SMS Failure,MEDIUM,23
+CUST-90047,Mobile data speed has dropped badly,Area-20,Broadband,Internet Speed,LOW,117
+CUST-90048,Calls disconnect after a few minutes,Area-23,Enterprise,Call Drops,MEDIUM,74
+CUST-90049,The whole area seems to have an outage,Area-29,Enterprise,Network Outage,MEDIUM,193
+CUST-90050,I was charged incorrectly,Area-3,Postpaid,Billing,MEDIUM,177
+CUST-90051,4G is very slow in my area,Area-27,Broadband,Internet Speed,CRITICAL,152
+CUST-90052,Internet is extremely slow since yesterday,Area-16,Enterprise,Internet Speed,HIGH,239
+CUST-90053,SIM is not being detected,Area-21,Enterprise,SIM Problems,LOW,28
+CUST-90054,Network service is unavailable in my area,Area-11,Prepaid,Network Outage,LOW,224
+CUST-90055,My phone shows no service,Area-10,Enterprise,No Network,LOW,213
+CUST-90056,Mobile data speed has dropped badly,Area-9,Broadband,Internet Speed,MEDIUM,34
+CUST-90057,My internet package is not active,Area-22,Enterprise,Package Issues,HIGH,110
+CUST-90058,Mobile data speed has dropped badly,Area-20,Enterprise,Internet Speed,LOW,165
+CUST-90059,The whole area seems to have an outage,Area-9,Postpaid,Network Outage,HIGH,78
+CUST-90060,Network service is unavailable in my area,Area-4,Prepaid,Network Outage,HIGH,166
+CUST-90061,I cannot send text messages,Area-18,Prepaid,SMS Failure,MEDIUM,146
+CUST-90062,My internet package is not active,Area-15,Prepaid,Package Issues,LOW,170
+CUST-90063,My phone shows no service,Area-17,Broadband,No Network,MEDIUM,111
+CUST-90064,The whole area seems to have an outage,Area-15,Postpaid,Network Outage,CRITICAL,103
+CUST-90065,SMS messages are not going through,Area-28,Prepaid,SMS Failure,HIGH,75
+CUST-90066,The package benefits are missing,Area-27,Prepaid,Package Issues,LOW,77
+CUST-90067,SIM is not being detected,Area-28,Postpaid,SIM Problems,HIGH,119
+CUST-90068,Network service is unavailable in my area,Area-15,Broadband,Network Outage,LOW,227
+CUST-90069,SMS messages are not going through,Area-19,Enterprise,SMS Failure,CRITICAL,64
+CUST-90070,The package benefits are missing,Area-23,Enterprise,Package Issues,LOW,103
+CUST-90071,There is no network signal,Area-5,Broadband,No Network,MEDIUM,227
+CUST-90072,Calls disconnect after a few minutes,Area-4,Enterprise,Call Drops,HIGH,8
+CUST-90073,There is no network signal,Area-3,Enterprise,No Network,MEDIUM,205
+CUST-90074,SIM is not being detected,Area-21,Prepaid,SIM Problems,LOW,223
+CUST-90075,My bill is higher than expected,Area-11,Enterprise,Billing,HIGH,228
+CUST-90076,Internet is extremely slow since yesterday,Area-21,Broadband,Internet Speed,MEDIUM,63
+CUST-90077,My calls keep dropping,Area-25,Prepaid,Call Drops,MEDIUM,118
+CUST-90078,There is no network signal,Area-2,Broadband,No Network,MEDIUM,208
+CUST-90079,Mobile data speed has dropped badly,Area-14,Postpaid,Internet Speed,LOW,67
+CUST-90080,My internet package is not active,Area-6,Postpaid,Package Issues,MEDIUM,25
+CUST-90081,My internet package is not active,Area-16,Postpaid,Package Issues,MEDIUM,64
+CUST-90082,Network service is unavailable in my area,Area-9,Prepaid,Network Outage,MEDIUM,235
+CUST-90083,The whole area seems to have an outage,Area-3,Enterprise,Network Outage,HIGH,93
+CUST-90084,SIM is not being detected,Area-23,Broadband,SIM Problems,MEDIUM,121
+CUST-90085,SIM is not being detected,Area-28,Enterprise,SIM Problems,LOW,32
+CUST-90086,I cannot send text messages,Area-19,Broadband,SMS Failure,MEDIUM,184
+CUST-90087,SIM is not being detected,Area-9,Prepaid,SIM Problems,LOW,149
+CUST-90088,4G is very slow in my area,Area-16,Broadband,Internet Speed,HIGH,203
+CUST-90089,I cannot send text messages,Area-8,Postpaid,SMS Failure,MEDIUM,163
+CUST-90090,My SIM stopped working,Area-21,Prepaid,SIM Problems,MEDIUM,236
+CUST-90091,Mobile data speed has dropped badly,Area-2,Broadband,Internet Speed,LOW,192
+CUST-90092,My phone shows no service,Area-11,Enterprise,No Network,LOW,49
+CUST-90093,I cannot send text messages,Area-17,Broadband,SMS Failure,LOW,217
+CUST-90094,My phone shows no service,Area-26,Broadband,No Network,LOW,196
+CUST-90095,My bill is higher than expected,Area-3,Postpaid,Billing,HIGH,198
+CUST-90096,I cannot send text messages,Area-28,Broadband,SMS Failure,HIGH,28
+CUST-90097,My internet package is not active,Area-15,Broadband,Package Issues,LOW,177
+CUST-90098,SIM is not being detected,Area-4,Postpaid,SIM Problems,MEDIUM,125
+CUST-90099,4G is very slow in my area,Area-11,Postpaid,Internet Speed,MEDIUM,170
+CUST-90100,Calls disconnect after a few minutes,Area-30,Broadband,Call Drops,MEDIUM,171
+CUST-90101,My internet package is not active,Area-2,Broadband,Package Issues,LOW,131
+CUST-90102,My calls keep dropping,Area-13,Enterprise,Call Drops,LOW,99
+CUST-90103,My internet package is not active,Area-29,Enterprise,Package Issues,MEDIUM,172
+CUST-90104,Calls disconnect after a few minutes,Area-9,Prepaid,Call Drops,HIGH,181
+CUST-90105,My bill is higher than expected,Area-8,Broadband,Billing,LOW,30
+CUST-90106,My bill is higher than expected,Area-2,Enterprise,Billing,MEDIUM,75
+CUST-90107,I cannot send text messages,Area-3,Postpaid,SMS Failure,CRITICAL,169
+CUST-90108,Mobile data speed has dropped badly,Area-8,Postpaid,Internet Speed,LOW,206
+CUST-90109,SMS messages are not going through,Area-19,Postpaid,SMS Failure,LOW,213
+CUST-90110,SMS messages are not going through,Area-26,Prepaid,SMS Failure,LOW,75
+CUST-90111,My phone shows no service,Area-26,Postpaid,No Network,CRITICAL,33
+CUST-90112,Mobile data speed has dropped badly,Area-26,Postpaid,Internet Speed,LOW,155
+CUST-90113,My bill is higher than expected,Area-2,Postpaid,Billing,LOW,194
+CUST-90114,My internet package is not active,Area-16,Enterprise,Package Issues,MEDIUM,204
+CUST-90115,I was charged incorrectly,Area-15,Postpaid,Billing,MEDIUM,162
+CUST-90116,4G is very slow in my area,Area-17,Broadband,Internet Speed,MEDIUM,122
+CUST-90117,Mobile data speed has dropped badly,Area-28,Enterprise,Internet Speed,LOW,114
+CUST-90118,Calls disconnect after a few minutes,Area-3,Prepaid,Call Drops,MEDIUM,87
+CUST-90119,My phone shows no service,Area-20,Broadband,No Network,LOW,102
+CUST-90120,SIM is not being detected,Area-4,Prepaid,SIM Problems,MEDIUM,223
+CUST-90121,SMS messages are not going through,Area-14,Broadband,SMS Failure,MEDIUM,216
+CUST-90122,The whole area seems to have an outage,Area-11,Enterprise,Network Outage,MEDIUM,85
+CUST-90123,My SIM stopped working,Area-22,Enterprise,SIM Problems,MEDIUM,22
+CUST-90124,My calls keep dropping,Area-14,Prepaid,Call Drops,HIGH,195
+CUST-90125,I was charged incorrectly,Area-19,Broadband,Billing,HIGH,176
+CUST-90126,Calls disconnect after a few minutes,Area-28,Prepaid,Call Drops,MEDIUM,78
+CUST-90127,My SIM stopped working,Area-5,Enterprise,SIM Problems,MEDIUM,62
+CUST-90128,Calls disconnect after a few minutes,Area-4,Broadband,Call Drops,MEDIUM,151
+CUST-90129,SMS messages are not going through,Area-20,Broadband,SMS Failure,HIGH,12
+CUST-90130,My phone shows no service,Area-30,Broadband,No Network,LOW,94
+CUST-90131,Internet is extremely slow since yesterday,Area-19,Enterprise,Internet Speed,LOW,22
+CUST-90132,There is no network signal,Area-3,Postpaid,No Network,MEDIUM,101
+CUST-90133,My internet package is not active,Area-12,Broadband,Package Issues,MEDIUM,189
+CUST-90134,I was charged incorrectly,Area-29,Prepaid,Billing,HIGH,44
+CUST-90135,There is no network signal,Area-22,Prepaid,No Network,HIGH,74
+CUST-90136,Network service is unavailable in my area,Area-20,Enterprise,Network Outage,MEDIUM,111
+CUST-90137,My SIM stopped working,Area-12,Enterprise,SIM Problems,LOW,33
+CUST-90138,SIM is not being detected,Area-17,Broadband,SIM Problems,MEDIUM,16
+CUST-90139,SMS messages are not going through,Area-1,Postpaid,SMS Failure,MEDIUM,82
+CUST-90140,I cannot send text messages,Area-10,Broadband,SMS Failure,HIGH,35
+CUST-90141,Mobile data speed has dropped badly,Area-6,Postpaid,Internet Speed,MEDIUM,102
+CUST-90142,I cannot send text messages,Area-3,Enterprise,SMS Failure,MEDIUM,225
+CUST-90143,Mobile data speed has dropped badly,Area-30,Prepaid,Internet Speed,MEDIUM,225
+CUST-90144,My bill is higher than expected,Area-23,Enterprise,Billing,MEDIUM,79
+CUST-90145,Calls disconnect after a few minutes,Area-6,Enterprise,Call Drops,MEDIUM,217
+CUST-90146,I was charged incorrectly,Area-8,Enterprise,Billing,LOW,155
+CUST-90147,The package benefits are missing,Area-28,Broadband,Package Issues,MEDIUM,195
+CUST-90148,I was charged incorrectly,Area-3,Prepaid,Billing,LOW,140
+CUST-90149,I cannot send text messages,Area-12,Postpaid,SMS Failure,HIGH,65
+CUST-90150,My calls keep dropping,Area-6,Postpaid,Call Drops,LOW,199
+CUST-90151,Calls disconnect after a few minutes,Area-15,Enterprise,Call Drops,LOW,179
+CUST-90152,My bill is higher than expected,Area-5,Enterprise,Billing,HIGH,22
+CUST-90153,Network service is unavailable in my area,Area-26,Broadband,Network Outage,MEDIUM,156
+CUST-90154,Internet is extremely slow since yesterday,Area-10,Enterprise,Internet Speed,MEDIUM,120
+CUST-90155,Mobile data speed has dropped badly,Area-3,Prepaid,Internet Speed,LOW,162
+CUST-90156,My internet package is not active,Area-15,Postpaid,Package Issues,MEDIUM,87
+CUST-90157,The whole area seems to have an outage,Area-15,Prepaid,Network Outage,MEDIUM,212
+CUST-90158,I was charged incorrectly,Area-17,Postpaid,Billing,CRITICAL,15
+CUST-90159,I cannot send text messages,Area-17,Postpaid,SMS Failure,MEDIUM,98
+CUST-90160,My bill is higher than expected,Area-14,Broadband,Billing,HIGH,178
+CUST-90161,4G is very slow in my area,Area-11,Prepaid,Internet Speed,HIGH,89
+CUST-90162,Calls disconnect after a few minutes,Area-10,Broadband,Call Drops,MEDIUM,190
+CUST-90163,There is no network signal,Area-30,Broadband,No Network,LOW,84
+CUST-90164,My internet package is not active,Area-10,Enterprise,Package Issues,LOW,169
+CUST-90165,I was charged incorrectly,Area-21,Enterprise,Billing,HIGH,135
+CUST-90166,My bill is higher than expected,Area-6,Postpaid,Billing,LOW,92
+CUST-90167,The whole area seems to have an outage,Area-5,Prepaid,Network Outage,LOW,80
+CUST-90168,My calls keep dropping,Area-22,Broadband,Call Drops,MEDIUM,229
+CUST-90169,There is no network signal,Area-6,Postpaid,No Network,MEDIUM,217
+CUST-90170,There is no network signal,Area-14,Broadband,No Network,MEDIUM,178
+CUST-90171,I cannot send text messages,Area-25,Enterprise,SMS Failure,CRITICAL,64
+CUST-90172,I cannot send text messages,Area-29,Postpaid,SMS Failure,LOW,99
+CUST-90173,Network service is unavailable in my area,Area-25,Enterprise,Network Outage,MEDIUM,133
+CUST-90174,My internet package is not active,Area-26,Postpaid,Package Issues,CRITICAL,228
+CUST-90175,SIM is not being detected,Area-28,Broadband,SIM Problems,LOW,146
+CUST-90176,My calls keep dropping,Area-10,Prepaid,Call Drops,MEDIUM,200
+CUST-90177,There is no network signal,Area-27,Enterprise,No Network,LOW,28
+CUST-90178,I cannot send text messages,Area-30,Prepaid,SMS Failure,HIGH,111
+CUST-90179,Mobile data speed has dropped badly,Area-8,Enterprise,Internet Speed,MEDIUM,25
+CUST-90180,My bill is higher than expected,Area-30,Prepaid,Billing,LOW,219
+CUST-90181,I was charged incorrectly,Area-2,Broadband,Billing,HIGH,239
+CUST-90182,The whole area seems to have an outage,Area-25,Enterprise,Network Outage,MEDIUM,119
+CUST-90183,Internet is extremely slow since yesterday,Area-9,Postpaid,Internet Speed,HIGH,218
+CUST-90184,My phone shows no service,Area-4,Broadband,No Network,MEDIUM,65
+CUST-90185,My SIM stopped working,Area-14,Enterprise,SIM Problems,LOW,21
+CUST-90186,Calls disconnect after a few minutes,Area-20,Prepaid,Call Drops,HIGH,166
+CUST-90187,I cannot send text messages,Area-14,Prepaid,SMS Failure,MEDIUM,162
+CUST-90188,My bill is higher than expected,Area-6,Prepaid,Billing,LOW,139
+CUST-90189,I was charged incorrectly,Area-13,Enterprise,Billing,LOW,16
+CUST-90190,The package benefits are missing,Area-24,Prepaid,Package Issues,CRITICAL,96
+CUST-90191,My calls keep dropping,Area-25,Broadband,Call Drops,LOW,39
+CUST-90192,Mobile data speed has dropped badly,Area-27,Postpaid,Internet Speed,MEDIUM,217
+CUST-90193,Network service is unavailable in my area,Area-21,Postpaid,Network Outage,CRITICAL,212
+CUST-90194,My phone shows no service,Area-2,Broadband,No Network,LOW,56
+CUST-90195,Internet is extremely slow since yesterday,Area-11,Broadband,Internet Speed,HIGH,136
+CUST-90196,The package benefits are missing,Area-9,Prepaid,Package Issues,CRITICAL,197
+CUST-90197,SMS messages are not going through,Area-28,Broadband,SMS Failure,LOW,74
+CUST-90198,Calls disconnect after a few minutes,Area-29,Enterprise,Call Drops,HIGH,195
+CUST-90199,Network service is unavailable in my area,Area-11,Postpaid,Network Outage,HIGH,132
+CUST-90200,Network service is unavailable in my area,Area-26,Prepaid,Network Outage,MEDIUM,191
+CUST-90201,My internet package is not active,Area-18,Broadband,Package Issues,LOW,87
+CUST-90202,Calls disconnect after a few minutes,Area-10,Enterprise,Call Drops,LOW,159
+CUST-90203,The package benefits are missing,Area-12,Enterprise,Package Issues,LOW,15
+CUST-90204,My bill is higher than expected,Area-9,Prepaid,Billing,MEDIUM,24
+CUST-90205,My internet package is not active,Area-1,Postpaid,Package Issues,MEDIUM,222
+CUST-90206,The whole area seems to have an outage,Area-8,Broadband,Network Outage,LOW,97
+CUST-90207,My internet package is not active,Area-20,Postpaid,Package Issues,HIGH,178
+CUST-90208,Network service is unavailable in my area,Area-15,Prepaid,Network Outage,HIGH,151
+CUST-90209,My phone shows no service,Area-11,Broadband,No Network,MEDIUM,68
+CUST-90210,My calls keep dropping,Area-16,Enterprise,Call Drops,LOW,238
+CUST-90211,Calls disconnect after a few minutes,Area-23,Enterprise,Call Drops,LOW,59
+CUST-90212,SIM is not being detected,Area-7,Prepaid,SIM Problems,MEDIUM,39
+CUST-90213,Calls disconnect after a few minutes,Area-3,Broadband,Call Drops,MEDIUM,175
+CUST-90214,My bill is higher than expected,Area-29,Broadband,Billing,MEDIUM,222
+CUST-90215,There is no network signal,Area-26,Broadband,No Network,MEDIUM,135
+CUST-90216,SMS messages are not going through,Area-26,Postpaid,SMS Failure,LOW,65
+CUST-90217,Network service is unavailable in my area,Area-15,Postpaid,Network Outage,LOW,161
+CUST-90218,Calls disconnect after a few minutes,Area-23,Enterprise,Call Drops,LOW,139
+CUST-90219,My internet package is not active,Area-5,Broadband,Package Issues,HIGH,169
+CUST-90220,Calls disconnect after a few minutes,Area-5,Postpaid,Call Drops,MEDIUM,201
+CUST-90221,There is no network signal,Area-27,Prepaid,No Network,MEDIUM,137
+CUST-90222,There is no network signal,Area-11,Postpaid,No Network,LOW,93
+CUST-90223,SIM is not being detected,Area-7,Broadband,SIM Problems,HIGH,37
+CUST-90224,My SIM stopped working,Area-17,Postpaid,SIM Problems,MEDIUM,156
+CUST-90225,My phone shows no service,Area-27,Prepaid,No Network,LOW,216
+CUST-90226,4G is very slow in my area,Area-25,Broadband,Internet Speed,LOW,171
+CUST-90227,I cannot send text messages,Area-20,Prepaid,SMS Failure,HIGH,132
+CUST-90228,SIM is not being detected,Area-16,Postpaid,SIM Problems,MEDIUM,211
+CUST-90229,My internet package is not active,Area-23,Prepaid,Package Issues,LOW,45
+CUST-90230,Network service is unavailable in my area,Area-7,Broadband,Network Outage,MEDIUM,160
+CUST-90231,My phone shows no service,Area-24,Broadband,No Network,LOW,107
+CUST-90232,There is no network signal,Area-11,Postpaid,No Network,HIGH,124
+CUST-90233,My calls keep dropping,Area-5,Prepaid,Call Drops,LOW,17
+CUST-90234,SIM is not being detected,Area-8,Postpaid,SIM Problems,HIGH,213
+CUST-90235,My bill is higher than expected,Area-7,Postpaid,Billing,HIGH,132
+CUST-90236,Network service is unavailable in my area,Area-16,Prepaid,Network Outage,MEDIUM,28
+CUST-90237,My internet package is not active,Area-7,Broadband,Package Issues,MEDIUM,17
+CUST-90238,4G is very slow in my area,Area-29,Enterprise,Internet Speed,LOW,78
+CUST-90239,Mobile data speed has dropped badly,Area-5,Broadband,Internet Speed,HIGH,191
+CUST-90240,My bill is higher than expected,Area-2,Enterprise,Billing,HIGH,18
+CUST-90241,I cannot send text messages,Area-3,Enterprise,SMS Failure,MEDIUM,134
+CUST-90242,Network service is unavailable in my area,Area-27,Prepaid,Network Outage,HIGH,37
+CUST-90243,Calls disconnect after a few minutes,Area-18,Broadband,Call Drops,MEDIUM,198
+CUST-90244,My phone shows no service,Area-17,Prepaid,No Network,LOW,16
+CUST-90245,Mobile data speed has dropped badly,Area-26,Enterprise,Internet Speed,LOW,137
+CUST-90246,The whole area seems to have an outage,Area-11,Broadband,Network Outage,LOW,46
+CUST-90247,The package benefits are missing,Area-19,Broadband,Package Issues,CRITICAL,134
+CUST-90248,Network service is unavailable in my area,Area-16,Prepaid,Network Outage,MEDIUM,99
+CUST-90249,My bill is higher than expected,Area-19,Broadband,Billing,MEDIUM,208
+CUST-90250,Mobile data speed has dropped badly,Area-21,Postpaid,Internet Speed,MEDIUM,189
+CUST-90251,Internet is extremely slow since yesterday,Area-17,Enterprise,Internet Speed,MEDIUM,42
+CUST-90252,SMS messages are not going through,Area-7,Prepaid,SMS Failure,LOW,117
+CUST-90253,My bill is higher than expected,Area-23,Postpaid,Billing,MEDIUM,110
+CUST-90254,The whole area seems to have an outage,Area-23,Postpaid,Network Outage,HIGH,137
+CUST-90255,I cannot send text messages,Area-17,Enterprise,SMS Failure,MEDIUM,85
+CUST-90256,My phone shows no service,Area-18,Broadband,No Network,MEDIUM,178
+CUST-90257,My SIM stopped working,Area-8,Broadband,SIM Problems,MEDIUM,147
+CUST-90258,SIM is not being detected,Area-25,Broadband,SIM Problems,LOW,185
+CUST-90259,I cannot send text messages,Area-11,Enterprise,SMS Failure,MEDIUM,94
+CUST-90260,SIM is not being detected,Area-29,Enterprise,SIM Problems,LOW,214
+CUST-90261,I was charged incorrectly,Area-10,Prepaid,Billing,CRITICAL,78
+CUST-90262,Calls disconnect after a few minutes,Area-21,Broadband,Call Drops,LOW,196
+CUST-90263,Network service is unavailable in my area,Area-30,Broadband,Network Outage,LOW,40
+CUST-90264,My calls keep dropping,Area-8,Prepaid,Call Drops,MEDIUM,176
+CUST-90265,SMS messages are not going through,Area-4,Enterprise,SMS Failure,MEDIUM,89
+CUST-90266,The whole area seems to have an outage,Area-1,Postpaid,Network Outage,LOW,109
+CUST-90267,The whole area seems to have an outage,Area-25,Broadband,Network Outage,MEDIUM,87
+CUST-90268,My SIM stopped working,Area-21,Postpaid,SIM Problems,MEDIUM,141
+CUST-90269,Internet is extremely slow since yesterday,Area-14,Postpaid,Internet Speed,HIGH,240
+CUST-90270,Mobile data speed has dropped badly,Area-26,Enterprise,Internet Speed,CRITICAL,52
+CUST-90271,My SIM stopped working,Area-10,Prepaid,SIM Problems,HIGH,90
+CUST-90272,SIM is not being detected,Area-29,Postpaid,SIM Problems,MEDIUM,222
+CUST-90273,The whole area seems to have an outage,Area-11,Postpaid,Network Outage,LOW,192
+CUST-90274,The whole area seems to have an outage,Area-1,Broadband,Network Outage,MEDIUM,207
+CUST-90275,My SIM stopped working,Area-6,Enterprise,SIM Problems,MEDIUM,216
+CUST-90276,My internet package is not active,Area-13,Prepaid,Package Issues,MEDIUM,52
+CUST-90277,There is no network signal,Area-1,Broadband,No Network,MEDIUM,103
+CUST-90278,I cannot send text messages,Area-11,Broadband,SMS Failure,MEDIUM,154
+CUST-90279,Mobile data speed has dropped badly,Area-23,Postpaid,Internet Speed,LOW,20
+CUST-90280,My calls keep dropping,Area-13,Broadband,Call Drops,MEDIUM,181
+CUST-90281,Calls disconnect after a few minutes,Area-12,Postpaid,Call Drops,MEDIUM,61
+CUST-90282,My phone shows no service,Area-24,Broadband,No Network,MEDIUM,111
+CUST-90283,The whole area seems to have an outage,Area-25,Postpaid,Network Outage,HIGH,179
+CUST-90284,Calls disconnect after a few minutes,Area-3,Prepaid,Call Drops,MEDIUM,20
+CUST-90285,SMS messages are not going through,Area-6,Broadband,SMS Failure,MEDIUM,223
+CUST-90286,The whole area seems to have an outage,Area-23,Enterprise,Network Outage,LOW,28
+CUST-90287,Network service is unavailable in my area,Area-5,Enterprise,Network Outage,HIGH,121
+CUST-90288,4G is very slow in my area,Area-26,Broadband,Internet Speed,MEDIUM,190
+CUST-90289,Internet is extremely slow since yesterday,Area-24,Postpaid,Internet Speed,MEDIUM,153
+CUST-90290,Calls disconnect after a few minutes,Area-23,Prepaid,Call Drops,LOW,143
+CUST-90291,Internet is extremely slow since yesterday,Area-30,Enterprise,Internet Speed,HIGH,13
+CUST-90292,My SIM stopped working,Area-25,Enterprise,SIM Problems,MEDIUM,100
+CUST-90293,The package benefits are missing,Area-13,Prepaid,Package Issues,MEDIUM,179
+CUST-90294,My phone shows no service,Area-4,Postpaid,No Network,MEDIUM,142
+CUST-90295,My internet package is not active,Area-27,Prepaid,Package Issues,MEDIUM,198
+CUST-90296,Mobile data speed has dropped badly,Area-22,Enterprise,Internet Speed,CRITICAL,141
+CUST-90297,My internet package is not active,Area-15,Broadband,Package Issues,HIGH,44
+CUST-90298,My SIM stopped working,Area-2,Enterprise,SIM Problems,LOW,162
+CUST-90299,Internet is extremely slow since yesterday,Area-4,Prepaid,Internet Speed,LOW,119
+CUST-90300,Internet is extremely slow since yesterday,Area-13,Enterprise,Internet Speed,LOW,64
+CUST-90301,SMS messages are not going through,Area-5,Broadband,SMS Failure,HIGH,64
+CUST-90302,My bill is higher than expected,Area-8,Broadband,Billing,MEDIUM,229
+CUST-90303,There is no network signal,Area-14,Broadband,No Network,CRITICAL,75
+CUST-90304,4G is very slow in my area,Area-29,Postpaid,Internet Speed,MEDIUM,165
+CUST-90305,My internet package is not active,Area-12,Enterprise,Package Issues,MEDIUM,206
+CUST-90306,My bill is higher than expected,Area-5,Broadband,Billing,MEDIUM,101
+CUST-90307,My phone shows no service,Area-8,Postpaid,No Network,HIGH,81
+CUST-90308,There is no network signal,Area-18,Enterprise,No Network,HIGH,111
+CUST-90309,My phone shows no service,Area-7,Broadband,No Network,MEDIUM,170
+CUST-90310,Calls disconnect after a few minutes,Area-3,Postpaid,Call Drops,HIGH,18
+CUST-90311,My SIM stopped working,Area-28,Prepaid,SIM Problems,MEDIUM,53
+CUST-90312,I cannot send text messages,Area-10,Prepaid,SMS Failure,MEDIUM,59
+CUST-90313,SMS messages are not going through,Area-24,Enterprise,SMS Failure,CRITICAL,239
+CUST-90314,SMS messages are not going through,Area-13,Postpaid,SMS Failure,MEDIUM,146
+CUST-90315,My bill is higher than expected,Area-15,Broadband,Billing,HIGH,83
+CUST-90316,SIM is not being detected,Area-15,Prepaid,SIM Problems,MEDIUM,210
+CUST-90317,Network service is unavailable in my area,Area-30,Postpaid,Network Outage,HIGH,99
+CUST-90318,I was charged incorrectly,Area-24,Postpaid,Billing,MEDIUM,9
+CUST-90319,SIM is not being detected,Area-10,Postpaid,SIM Problems,MEDIUM,55
+CUST-90320,I was charged incorrectly,Area-16,Broadband,Billing,LOW,70
+CUST-90321,Network service is unavailable in my area,Area-15,Postpaid,Network Outage,CRITICAL,192
+CUST-90322,My bill is higher than expected,Area-6,Prepaid,Billing,LOW,139
+CUST-90323,Internet is extremely slow since yesterday,Area-27,Prepaid,Internet Speed,HIGH,200
+CUST-90324,4G is very slow in my area,Area-8,Prepaid,Internet Speed,MEDIUM,186
+CUST-90325,My phone shows no service,Area-12,Prepaid,No Network,LOW,163
+CUST-90326,The whole area seems to have an outage,Area-1,Enterprise,Network Outage,MEDIUM,8
+CUST-90327,Mobile data speed has dropped badly,Area-18,Broadband,Internet Speed,MEDIUM,9
+CUST-90328,My internet package is not active,Area-4,Prepaid,Package Issues,HIGH,139
+CUST-90329,My phone shows no service,Area-27,Broadband,No Network,LOW,73
+CUST-90330,The package benefits are missing,Area-15,Postpaid,Package Issues,LOW,183
+CUST-90331,SMS messages are not going through,Area-21,Prepaid,SMS Failure,LOW,28
+CUST-90332,The package benefits are missing,Area-2,Prepaid,Package Issues,MEDIUM,184
+CUST-90333,My phone shows no service,Area-21,Broadband,No Network,LOW,149
+CUST-90334,My calls keep dropping,Area-8,Postpaid,Call Drops,HIGH,235
+CUST-90335,The whole area seems to have an outage,Area-22,Broadband,Network Outage,LOW,235
+CUST-90336,Mobile data speed has dropped badly,Area-1,Postpaid,Internet Speed,LOW,155
+CUST-90337,My phone shows no service,Area-30,Prepaid,No Network,HIGH,81
+CUST-90338,My phone shows no service,Area-22,Broadband,No Network,MEDIUM,103
+CUST-90339,There is no network signal,Area-17,Broadband,No Network,HIGH,18
+CUST-90340,My calls keep dropping,Area-11,Enterprise,Call Drops,MEDIUM,203
+CUST-90341,My bill is higher than expected,Area-26,Enterprise,Billing,LOW,130
+CUST-90342,I cannot send text messages,Area-14,Postpaid,SMS Failure,MEDIUM,179
+CUST-90343,The package benefits are missing,Area-26,Postpaid,Package Issues,LOW,187
+CUST-90344,My calls keep dropping,Area-13,Postpaid,Call Drops,LOW,194
+CUST-90345,My internet package is not active,Area-3,Prepaid,Package Issues,LOW,83
+CUST-90346,Network service is unavailable in my area,Area-4,Postpaid,Network Outage,MEDIUM,27
+CUST-90347,My phone shows no service,Area-4,Prepaid,No Network,MEDIUM,27
+CUST-90348,My bill is higher than expected,Area-28,Enterprise,Billing,MEDIUM,8
+CUST-90349,My SIM stopped working,Area-24,Postpaid,SIM Problems,MEDIUM,151
+CUST-90350,There is no network signal,Area-5,Broadband,No Network,MEDIUM,82
+CUST-90351,My SIM stopped working,Area-6,Enterprise,SIM Problems,MEDIUM,75
+CUST-90352,My internet package is not active,Area-12,Broadband,Package Issues,LOW,68
+CUST-90353,The whole area seems to have an outage,Area-15,Prepaid,Network Outage,MEDIUM,39
+CUST-90354,SIM is not being detected,Area-11,Enterprise,SIM Problems,LOW,210
+CUST-90355,My bill is higher than expected,Area-27,Postpaid,Billing,MEDIUM,81
+CUST-90356,I was charged incorrectly,Area-16,Broadband,Billing,MEDIUM,50
+CUST-90357,The package benefits are missing,Area-24,Enterprise,Package Issues,CRITICAL,152
+CUST-90358,I cannot send text messages,Area-27,Enterprise,SMS Failure,LOW,98
+CUST-90359,My calls keep dropping,Area-19,Postpaid,Call Drops,HIGH,179
+CUST-90360,Mobile data speed has dropped badly,Area-23,Postpaid,Internet Speed,CRITICAL,117
+CUST-90361,My SIM stopped working,Area-27,Enterprise,SIM Problems,HIGH,177
+CUST-90362,Network service is unavailable in my area,Area-8,Broadband,Network Outage,LOW,173
+CUST-90363,My phone shows no service,Area-3,Enterprise,No Network,MEDIUM,158
+CUST-90364,Network service is unavailable in my area,Area-18,Prepaid,Network Outage,MEDIUM,207
+CUST-90365,I was charged incorrectly,Area-4,Postpaid,Billing,MEDIUM,173
+CUST-90366,I was charged incorrectly,Area-19,Enterprise,Billing,LOW,197
+CUST-90367,My bill is higher than expected,Area-4,Prepaid,Billing,CRITICAL,30
+CUST-90368,My SIM stopped working,Area-15,Broadband,SIM Problems,LOW,105
+CUST-90369,The whole area seems to have an outage,Area-12,Prepaid,Network Outage,HIGH,128
+CUST-90370,My calls keep dropping,Area-4,Postpaid,Call Drops,LOW,94
+CUST-90371,My SIM stopped working,Area-17,Enterprise,SIM Problems,LOW,94
+CUST-90372,Network service is unavailable in my area,Area-11,Prepaid,Network Outage,LOW,81
+CUST-90373,Internet is extremely slow since yesterday,Area-1,Broadband,Internet Speed,HIGH,170
+CUST-90374,My calls keep dropping,Area-30,Postpaid,Call Drops,MEDIUM,137
+CUST-90375,My phone shows no service,Area-18,Enterprise,No Network,MEDIUM,123
+CUST-90376,SMS messages are not going through,Area-6,Enterprise,SMS Failure,HIGH,106
+CUST-90377,Internet is extremely slow since yesterday,Area-15,Enterprise,Internet Speed,MEDIUM,104
+CUST-90378,Internet is extremely slow since yesterday,Area-9,Prepaid,Internet Speed,MEDIUM,152
+CUST-90379,My calls keep dropping,Area-12,Broadband,Call Drops,HIGH,55
+CUST-90380,Network service is unavailable in my area,Area-17,Broadband,Network Outage,LOW,157
+CUST-90381,My internet package is not active,Area-12,Broadband,Package Issues,MEDIUM,221
+CUST-90382,Network service is unavailable in my area,Area-30,Prepaid,Network Outage,MEDIUM,177
+CUST-90383,There is no network signal,Area-10,Prepaid,No Network,LOW,51
+CUST-90384,My bill is higher than expected,Area-14,Postpaid,Billing,MEDIUM,152
+CUST-90385,The package benefits are missing,Area-21,Postpaid,Package Issues,MEDIUM,147
+CUST-90386,There is no network signal,Area-6,Broadband,No Network,MEDIUM,220
+CUST-90387,Network service is unavailable in my area,Area-1,Enterprise,Network Outage,MEDIUM,39
+CUST-90388,I cannot send text messages,Area-14,Enterprise,SMS Failure,HIGH,111
+CUST-90389,The whole area seems to have an outage,Area-19,Prepaid,Network Outage,MEDIUM,208
+CUST-90390,I cannot send text messages,Area-8,Broadband,SMS Failure,LOW,48
+CUST-90391,Network service is unavailable in my area,Area-18,Prepaid,Network Outage,MEDIUM,151
+CUST-90392,Calls disconnect after a few minutes,Area-18,Prepaid,Call Drops,LOW,199
+CUST-90393,Network service is unavailable in my area,Area-4,Postpaid,Network Outage,MEDIUM,81
+CUST-90394,Mobile data speed has dropped badly,Area-28,Prepaid,Internet Speed,MEDIUM,117
+CUST-90395,My calls keep dropping,Area-7,Broadband,Call Drops,HIGH,225
+CUST-90396,My internet package is not active,Area-26,Postpaid,Package Issues,LOW,213
+CUST-90397,I cannot send text messages,Area-18,Broadband,SMS Failure,HIGH,157
+CUST-90398,My phone shows no service,Area-10,Broadband,No Network,LOW,224
+CUST-90399,Calls disconnect after a few minutes,Area-30,Prepaid,Call Drops,LOW,75
+CUST-90400,There is no network signal,Area-8,Postpaid,No Network,MEDIUM,187
+CUST-90401,My bill is higher than expected,Area-16,Postpaid,Billing,HIGH,152
+CUST-90402,SIM is not being detected,Area-15,Prepaid,SIM Problems,MEDIUM,167
+CUST-90403,Calls disconnect after a few minutes,Area-23,Broadband,Call Drops,MEDIUM,121
+CUST-90404,The whole area seems to have an outage,Area-28,Prepaid,Network Outage,LOW,192
+CUST-90405,Network service is unavailable in my area,Area-28,Prepaid,Network Outage,MEDIUM,208
+CUST-90406,The package benefits are missing,Area-27,Postpaid,Package Issues,LOW,131
+CUST-90407,SIM is not being detected,Area-11,Postpaid,SIM Problems,LOW,149
+CUST-90408,The whole area seems to have an outage,Area-2,Prepaid,Network Outage,HIGH,165
+CUST-90409,The whole area seems to have an outage,Area-15,Enterprise,Network Outage,LOW,5
+CUST-90410,My internet package is not active,Area-29,Broadband,Package Issues,LOW,45
+CUST-90411,SIM is not being detected,Area-9,Prepaid,SIM Problems,LOW,100
+CUST-90412,My phone shows no service,Area-24,Postpaid,No Network,LOW,114
+CUST-90413,My calls keep dropping,Area-7,Enterprise,Call Drops,MEDIUM,24
+CUST-90414,My phone shows no service,Area-1,Prepaid,No Network,MEDIUM,183
+CUST-90415,My bill is higher than expected,Area-23,Postpaid,Billing,HIGH,127
+CUST-90416,My calls keep dropping,Area-24,Prepaid,Call Drops,LOW,31
+CUST-90417,My bill is higher than expected,Area-5,Enterprise,Billing,MEDIUM,203
+CUST-90418,There is no network signal,Area-3,Prepaid,No Network,MEDIUM,161
+CUST-90419,There is no network signal,Area-21,Postpaid,No Network,MEDIUM,240
+CUST-90420,The package benefits are missing,Area-28,Postpaid,Package Issues,MEDIUM,27
+CUST-90421,My calls keep dropping,Area-19,Enterprise,Call Drops,LOW,94
+CUST-90422,My internet package is not active,Area-8,Broadband,Package Issues,LOW,170
+CUST-90423,Calls disconnect after a few minutes,Area-25,Prepaid,Call Drops,LOW,222
+CUST-90424,My SIM stopped working,Area-24,Enterprise,SIM Problems,LOW,80
+CUST-90425,Internet is extremely slow since yesterday,Area-16,Enterprise,Internet Speed,HIGH,33
+CUST-90426,SMS messages are not going through,Area-17,Prepaid,SMS Failure,MEDIUM,97
+CUST-90427,My bill is higher than expected,Area-12,Postpaid,Billing,LOW,200
+CUST-90428,The whole area seems to have an outage,Area-1,Prepaid,Network Outage,CRITICAL,8
+CUST-90429,My SIM stopped working,Area-26,Enterprise,SIM Problems,LOW,134
+CUST-90430,SIM is not being detected,Area-14,Enterprise,SIM Problems,MEDIUM,26
+CUST-90431,My phone shows no service,Area-3,Postpaid,No Network,LOW,211
+CUST-90432,My phone shows no service,Area-19,Prepaid,No Network,MEDIUM,84
+CUST-90433,My internet package is not active,Area-2,Postpaid,Package Issues,MEDIUM,27
+CUST-90434,My internet package is not active,Area-10,Postpaid,Package Issues,LOW,35
+CUST-90435,4G is very slow in my area,Area-1,Postpaid,Internet Speed,MEDIUM,132
+CUST-90436,My bill is higher than expected,Area-6,Broadband,Billing,MEDIUM,37
+CUST-90437,My SIM stopped working,Area-25,Prepaid,SIM Problems,MEDIUM,90
+CUST-90438,My internet package is not active,Area-9,Prepaid,Package Issues,LOW,132
+CUST-90439,The whole area seems to have an outage,Area-16,Postpaid,Network Outage,MEDIUM,99
+CUST-90440,There is no network signal,Area-29,Prepaid,No Network,LOW,63
+CUST-90441,Internet is extremely slow since yesterday,Area-8,Prepaid,Internet Speed,LOW,125
+CUST-90442,I was charged incorrectly,Area-6,Prepaid,Billing,MEDIUM,146
+CUST-90443,My internet package is not active,Area-14,Broadband,Package Issues,LOW,74
+CUST-90444,My calls keep dropping,Area-17,Prepaid,Call Drops,MEDIUM,50
+CUST-90445,SMS messages are not going through,Area-13,Prepaid,SMS Failure,HIGH,229
+CUST-90446,Network service is unavailable in my area,Area-11,Prepaid,Network Outage,HIGH,146
+CUST-90447,The whole area seems to have an outage,Area-10,Broadband,Network Outage,LOW,194
+CUST-90448,I cannot send text messages,Area-25,Postpaid,SMS Failure,MEDIUM,192
+CUST-90449,I cannot send text messages,Area-1,Postpaid,SMS Failure,LOW,143
+CUST-90450,I was charged incorrectly,Area-11,Prepaid,Billing,MEDIUM,199
+CUST-90451,The package benefits are missing,Area-4,Postpaid,Package Issues,HIGH,140
+CUST-90452,SMS messages are not going through,Area-5,Broadband,SMS Failure,MEDIUM,28
+CUST-90453,4G is very slow in my area,Area-14,Broadband,Internet Speed,HIGH,122
+CUST-90454,My calls keep dropping,Area-21,Enterprise,Call Drops,MEDIUM,24
+CUST-90455,Internet is extremely slow since yesterday,Area-8,Broadband,Internet Speed,MEDIUM,71
+CUST-90456,My bill is higher than expected,Area-23,Broadband,Billing,HIGH,86
+CUST-90457,The whole area seems to have an outage,Area-7,Postpaid,Network Outage,LOW,204
+CUST-90458,My calls keep dropping,Area-15,Enterprise,Call Drops,LOW,85
+CUST-90459,The package benefits are missing,Area-25,Postpaid,Package Issues,LOW,120
+CUST-90460,My SIM stopped working,Area-3,Postpaid,SIM Problems,MEDIUM,211
+CUST-90461,My SIM stopped working,Area-7,Broadband,SIM Problems,HIGH,42
+CUST-90462,Calls disconnect after a few minutes,Area-13,Prepaid,Call Drops,MEDIUM,178
+CUST-90463,My SIM stopped working,Area-1,Enterprise,SIM Problems,LOW,223
+CUST-90464,The whole area seems to have an outage,Area-4,Enterprise,Network Outage,MEDIUM,31
+CUST-90465,There is no network signal,Area-27,Postpaid,No Network,LOW,38
+CUST-90466,I cannot send text messages,Area-22,Prepaid,SMS Failure,HIGH,154
+CUST-90467,My SIM stopped working,Area-1,Prepaid,SIM Problems,HIGH,55
+CUST-90468,The whole area seems to have an outage,Area-29,Broadband,Network Outage,HIGH,36
+CUST-90469,Internet is extremely slow since yesterday,Area-6,Enterprise,Internet Speed,HIGH,215
+CUST-90470,The package benefits are missing,Area-22,Enterprise,Package Issues,MEDIUM,49
+CUST-90471,I was charged incorrectly,Area-9,Broadband,Billing,LOW,119
+CUST-90472,There is no network signal,Area-21,Broadband,No Network,LOW,132
+CUST-90473,The package benefits are missing,Area-2,Prepaid,Package Issues,HIGH,76
+CUST-90474,My internet package is not active,Area-21,Postpaid,Package Issues,LOW,166
+CUST-90475,4G is very slow in my area,Area-12,Enterprise,Internet Speed,CRITICAL,144
+CUST-90476,Network service is unavailable in my area,Area-13,Broadband,Network Outage,LOW,51
+CUST-90477,Internet is extremely slow since yesterday,Area-1,Broadband,Internet Speed,LOW,19
+CUST-90478,The whole area seems to have an outage,Area-6,Prepaid,Network Outage,MEDIUM,68
+CUST-90479,SMS messages are not going through,Area-25,Postpaid,SMS Failure,LOW,152
+CUST-90480,My internet package is not active,Area-6,Postpaid,Package Issues,MEDIUM,156
+CUST-90481,My bill is higher than expected,Area-30,Prepaid,Billing,HIGH,185
+CUST-90482,I was charged incorrectly,Area-19,Postpaid,Billing,HIGH,219
+CUST-90483,The whole area seems to have an outage,Area-16,Prepaid,Network Outage,MEDIUM,28
+CUST-90484,Internet is extremely slow since yesterday,Area-1,Enterprise,Internet Speed,LOW,5
+CUST-90485,I was charged incorrectly,Area-26,Postpaid,Billing,HIGH,92
+CUST-90486,My phone shows no service,Area-2,Prepaid,No Network,HIGH,42
+CUST-90487,My phone shows no service,Area-3,Broadband,No Network,HIGH,185
+CUST-90488,The package benefits are missing,Area-10,Broadband,Package Issues,MEDIUM,39
+CUST-90489,My phone shows no service,Area-26,Enterprise,No Network,MEDIUM,171
+CUST-90490,My bill is higher than expected,Area-8,Postpaid,Billing,LOW,101
+CUST-90491,SIM is not being detected,Area-5,Postpaid,SIM Problems,MEDIUM,191
+CUST-90492,4G is very slow in my area,Area-13,Prepaid,Internet Speed,HIGH,51
+CUST-90493,I was charged incorrectly,Area-21,Prepaid,Billing,HIGH,132
+CUST-90494,There is no network signal,Area-8,Broadband,No Network,LOW,86
+CUST-90495,There is no network signal,Area-27,Broadband,No Network,MEDIUM,119
+CUST-90496,Internet is extremely slow since yesterday,Area-23,Prepaid,Internet Speed,LOW,94
+CUST-90497,My SIM stopped working,Area-2,Enterprise,SIM Problems,HIGH,117
+CUST-90498,The package benefits are missing,Area-16,Enterprise,Package Issues,CRITICAL,94
+CUST-90499,The package benefits are missing,Area-26,Postpaid,Package Issues,LOW,46
+CUST-90500,The whole area seems to have an outage,Area-10,Prepaid,Network Outage,LOW,86
+CUST-90501,My SIM stopped working,Area-11,Postpaid,SIM Problems,CRITICAL,232
+CUST-90502,My internet package is not active,Area-18,Prepaid,Package Issues,LOW,91
+CUST-90503,Network service is unavailable in my area,Area-21,Postpaid,Network Outage,MEDIUM,160
+CUST-90504,My internet package is not active,Area-11,Postpaid,Package Issues,LOW,53
+CUST-90505,The package benefits are missing,Area-22,Broadband,Package Issues,MEDIUM,81
+CUST-90506,I cannot send text messages,Area-19,Enterprise,SMS Failure,LOW,44
+CUST-90507,Mobile data speed has dropped badly,Area-3,Broadband,Internet Speed,MEDIUM,215
+CUST-90508,The whole area seems to have an outage,Area-7,Postpaid,Network Outage,LOW,168
+CUST-90509,SIM is not being detected,Area-28,Prepaid,SIM Problems,CRITICAL,83
+CUST-90510,The package benefits are missing,Area-3,Enterprise,Package Issues,MEDIUM,52
+CUST-90511,My bill is higher than expected,Area-6,Enterprise,Billing,HIGH,16
+CUST-90512,SIM is not being detected,Area-8,Broadband,SIM Problems,MEDIUM,149
+CUST-90513,4G is very slow in my area,Area-22,Prepaid,Internet Speed,LOW,26
+CUST-90514,My bill is higher than expected,Area-25,Postpaid,Billing,HIGH,146
+CUST-90515,4G is very slow in my area,Area-14,Enterprise,Internet Speed,HIGH,151
+CUST-90516,SMS messages are not going through,Area-13,Prepaid,SMS Failure,MEDIUM,133
+CUST-90517,My phone shows no service,Area-6,Postpaid,No Network,LOW,59
+CUST-90518,I cannot send text messages,Area-3,Enterprise,SMS Failure,LOW,56
+CUST-90519,My phone shows no service,Area-11,Prepaid,No Network,HIGH,27
+CUST-90520,The package benefits are missing,Area-28,Broadband,Package Issues,MEDIUM,138
+CUST-90521,The whole area seems to have an outage,Area-26,Enterprise,Network Outage,HIGH,33
+CUST-90522,My internet package is not active,Area-30,Prepaid,Package Issues,LOW,149
+CUST-90523,Calls disconnect after a few minutes,Area-29,Enterprise,Call Drops,HIGH,72
+CUST-90524,The package benefits are missing,Area-2,Postpaid,Package Issues,MEDIUM,75
+CUST-90525,The package benefits are missing,Area-2,Enterprise,Package Issues,LOW,232
+CUST-90526,I was charged incorrectly,Area-24,Enterprise,Billing,MEDIUM,240
+CUST-90527,My SIM stopped working,Area-11,Broadband,SIM Problems,HIGH,84
+CUST-90528,My SIM stopped working,Area-28,Postpaid,SIM Problems,HIGH,39
+CUST-90529,SIM is not being detected,Area-25,Broadband,SIM Problems,CRITICAL,73
+CUST-90530,My internet package is not active,Area-7,Enterprise,Package Issues,MEDIUM,59
+CUST-90531,The package benefits are missing,Area-27,Prepaid,Package Issues,MEDIUM,136
+CUST-90532,My phone shows no service,Area-5,Prepaid,No Network,LOW,49
+CUST-90533,SMS messages are not going through,Area-27,Prepaid,SMS Failure,HIGH,68
+CUST-90534,Mobile data speed has dropped badly,Area-23,Postpaid,Internet Speed,MEDIUM,75
+CUST-90535,My bill is higher than expected,Area-21,Prepaid,Billing,HIGH,179
+CUST-90536,Mobile data speed has dropped badly,Area-20,Enterprise,Internet Speed,LOW,50
+CUST-90537,Network service is unavailable in my area,Area-12,Postpaid,Network Outage,MEDIUM,219
+CUST-90538,My SIM stopped working,Area-10,Prepaid,SIM Problems,MEDIUM,103
+CUST-90539,4G is very slow in my area,Area-25,Postpaid,Internet Speed,LOW,224
+CUST-90540,SMS messages are not going through,Area-9,Enterprise,SMS Failure,MEDIUM,136
+CUST-90541,4G is very slow in my area,Area-1,Enterprise,Internet Speed,HIGH,238
+CUST-90542,There is no network signal,Area-8,Broadband,No Network,MEDIUM,160
+CUST-90543,SIM is not being detected,Area-14,Enterprise,SIM Problems,MEDIUM,223
+CUST-90544,I was charged incorrectly,Area-15,Broadband,Billing,MEDIUM,178
+CUST-90545,My internet package is not active,Area-17,Broadband,Package Issues,MEDIUM,148
+CUST-90546,My SIM stopped working,Area-16,Prepaid,SIM Problems,LOW,91
+CUST-90547,SIM is not being detected,Area-9,Broadband,SIM Problems,MEDIUM,53
+CUST-90548,There is no network signal,Area-29,Prepaid,No Network,MEDIUM,211
+CUST-90549,My internet package is not active,Area-24,Prepaid,Package Issues,MEDIUM,172
+CUST-90550,Network service is unavailable in my area,Area-30,Enterprise,Network Outage,CRITICAL,108
+CUST-90551,My internet package is not active,Area-11,Postpaid,Package Issues,MEDIUM,180
+CUST-90552,Network service is unavailable in my area,Area-17,Broadband,Network Outage,HIGH,221
+CUST-90553,There is no network signal,Area-10,Prepaid,No Network,HIGH,125
+CUST-90554,There is no network signal,Area-22,Broadband,No Network,MEDIUM,172
+CUST-90555,My calls keep dropping,Area-24,Broadband,Call Drops,LOW,112
+CUST-90556,My bill is higher than expected,Area-15,Prepaid,Billing,MEDIUM,125
+CUST-90557,4G is very slow in my area,Area-19,Prepaid,Internet Speed,HIGH,125
+CUST-90558,I cannot send text messages,Area-17,Broadband,SMS Failure,MEDIUM,110
+CUST-90559,Internet is extremely slow since yesterday,Area-5,Postpaid,Internet Speed,HIGH,92
+CUST-90560,The package benefits are missing,Area-5,Broadband,Package Issues,CRITICAL,225
+CUST-90561,My phone shows no service,Area-11,Postpaid,No Network,HIGH,85
+CUST-90562,Mobile data speed has dropped badly,Area-7,Postpaid,Internet Speed,LOW,152
+CUST-90563,There is no network signal,Area-5,Enterprise,No Network,MEDIUM,167
+CUST-90564,The package benefits are missing,Area-13,Prepaid,Package Issues,MEDIUM,14
+CUST-90565,SMS messages are not going through,Area-29,Broadband,SMS Failure,MEDIUM,198
+CUST-90566,SMS messages are not going through,Area-21,Postpaid,SMS Failure,LOW,62
+CUST-90567,I was charged incorrectly,Area-13,Broadband,Billing,LOW,47
+CUST-90568,Calls disconnect after a few minutes,Area-10,Enterprise,Call Drops,HIGH,191
+CUST-90569,I was charged incorrectly,Area-11,Enterprise,Billing,MEDIUM,96
+CUST-90570,I cannot send text messages,Area-1,Postpaid,SMS Failure,LOW,62
+CUST-90571,There is no network signal,Area-19,Postpaid,No Network,LOW,36
+CUST-90572,I was charged incorrectly,Area-13,Broadband,Billing,MEDIUM,202
+CUST-90573,Internet is extremely slow since yesterday,Area-22,Prepaid,Internet Speed,MEDIUM,172
+CUST-90574,Internet is extremely slow since yesterday,Area-14,Enterprise,Internet Speed,LOW,102
+CUST-90575,Calls disconnect after a few minutes,Area-23,Postpaid,Call Drops,MEDIUM,57
+CUST-90576,4G is very slow in my area,Area-4,Broadband,Internet Speed,LOW,164
+CUST-90577,There is no network signal,Area-17,Prepaid,No Network,MEDIUM,77
+CUST-90578,Calls disconnect after a few minutes,Area-7,Postpaid,Call Drops,HIGH,204
+CUST-90579,My SIM stopped working,Area-12,Enterprise,SIM Problems,HIGH,80
+CUST-90580,My phone shows no service,Area-30,Postpaid,No Network,LOW,181
+CUST-90581,The whole area seems to have an outage,Area-1,Prepaid,Network Outage,LOW,237
+CUST-90582,Calls disconnect after a few minutes,Area-5,Prepaid,Call Drops,HIGH,204
+CUST-90583,My calls keep dropping,Area-29,Broadband,Call Drops,MEDIUM,169
+CUST-90584,I cannot send text messages,Area-9,Enterprise,SMS Failure,MEDIUM,17
+CUST-90585,My calls keep dropping,Area-28,Broadband,Call Drops,HIGH,97
+CUST-90586,I was charged incorrectly,Area-4,Prepaid,Billing,MEDIUM,7
+CUST-90587,There is no network signal,Area-11,Broadband,No Network,MEDIUM,233
+CUST-90588,Network service is unavailable in my area,Area-29,Prepaid,Network Outage,CRITICAL,100
+CUST-90589,My bill is higher than expected,Area-13,Enterprise,Billing,LOW,74
+CUST-90590,The package benefits are missing,Area-26,Enterprise,Package Issues,MEDIUM,171
+CUST-90591,There is no network signal,Area-28,Postpaid,No Network,LOW,31
+CUST-90592,The package benefits are missing,Area-26,Enterprise,Package Issues,HIGH,51
+CUST-90593,My internet package is not active,Area-28,Postpaid,Package Issues,HIGH,128
+CUST-90594,Network service is unavailable in my area,Area-15,Prepaid,Network Outage,LOW,21
+CUST-90595,My SIM stopped working,Area-23,Postpaid,SIM Problems,MEDIUM,176
+CUST-90596,I was charged incorrectly,Area-14,Postpaid,Billing,MEDIUM,128
+CUST-90597,My bill is higher than expected,Area-5,Prepaid,Billing,MEDIUM,7
+CUST-90598,My phone shows no service,Area-28,Enterprise,No Network,MEDIUM,227
+CUST-90599,My phone shows no service,Area-11,Postpaid,No Network,LOW,89

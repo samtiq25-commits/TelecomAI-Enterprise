@@ -1,0 +1,1 @@
+Equipment degradation indicators include abnormal temperature, high CPU, increasing error counts, long uptime and insufficient maintenance. Schedule preventive maintenance for high-risk equipment.
