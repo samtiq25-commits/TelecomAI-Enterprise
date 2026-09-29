@@ -22,7 +22,10 @@ from src.database import (
     recent_investigation_metrics, get_active_incident_by_tower,
     get_incident_by_id, update_incident_status, recent_model_telemetry
 )
-from src.incident_correlation import correlate_operational_events
+from src.incident_correlation import (
+    correlate_operational_events,
+    correlate_and_audit_operational_events,
+)
 from src.security import verify_password, can_access, roles
 from src.voice import transcribe_audio, text_to_speech
 from src.voice_assistant import (
@@ -963,6 +966,10 @@ if page == "📡 Live NOC":
             ):
 
                 processed = []
+
+                incident_correlations = correlate_and_audit_operational_events(
+                       operational_events
+               )
 
                 for correlation in incident_correlations:
 
