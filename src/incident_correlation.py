@@ -1,4 +1,4 @@
-from .database import recent_incidents
+from .database import recent_incidents,audit
 import pandas as pd
 
 
@@ -160,63 +160,36 @@ def correlate_operational_events(
         key=lambda x: x["event_timestamp"],
         reverse=True,
     )
-def test_invalid_timestamps_are_ignored(monkeypatch):
-    monkeypatch.setattr(
-        incident_correlation,
-        "recent_incidents",
-        lambda limit: [],
+def correlate_and_audit_operational_events(
+    operational_events,
+    incident_limit=100,
+    freshness_hours=12,
+):
+    """
+    Correlate operational events and persist
+    the correlation decisions in the audit log.
+
+    This function does not create incidents or
+    launch LangGraph investigations.
+    """
+
+    results = correlate_operational_events(
+        operational_events=operational_events,
+        incident_limit=incident_limit,
+        freshness_hours=freshness_hours,
     )
 
-    events = [
-        {
-            "trigger_investigation": True,
-            "timestamp": "not-a-date",
-            "tower_id": "TWR-1001",
-        }
-    ]
+    for result in results:
+        audit(
+            actor="system",
+            role="System",
+            action="OPERATIONAL_EVENT_CORRELATED",
+            resource_id=(
+                str(result["incident_id"])
+                if result.get("incident_id") is not None
+                else str(result["tower_id"])
+            ),
+            details=str(result),
+        )
 
-    result = incident_correlation.correlate_operational_events(
-        events
-    )
-
-    assert result == []
-def test_invalid_timestamps_are_ignored(monkeypatch):
-    monkeypatch.setattr(
-        incident_correlation,
-        "recent_incidents",
-        lambda limit: [],
-    )
-
-    events = [
-        {
-            "trigger_investigation": True,
-            "timestamp": "not-a-date",
-            "tower_id": "TWR-1001",
-        }
-    ]
-
-    result = incident_correlation.correlate_operational_events(
-        events
-    )
-
-    assert result == []    
-def test_invalid_timestamps_are_ignored(monkeypatch):
-    monkeypatch.setattr(
-        incident_correlation,
-        "recent_incidents",
-        lambda limit: [],
-    )
-
-    events = [
-        {
-            "trigger_investigation": True,
-            "timestamp": "not-a-date",
-            "tower_id": "TWR-1001",
-        }
-    ]
-
-    result = incident_correlation.correlate_operational_events(
-        events
-    )
-
-    assert result == []    
+    return results
