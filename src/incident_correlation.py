@@ -1,6 +1,6 @@
 from .database import recent_incidents,audit
 import pandas as pd
-
+import json
 
 def correlate_operational_events(
     operational_events,
@@ -189,7 +189,11 @@ def correlate_and_audit_operational_events(
                 if result.get("incident_id") is not None
                 else str(result["tower_id"])
             ),
-            details=str(result),
+            details=json.dumps(
+                 result,
+               default=str,
+               sort_keys=True,
+),
         )
 
     return results
