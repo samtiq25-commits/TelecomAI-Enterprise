@@ -106,25 +106,33 @@ def detect_operational_events(network, anomalies):
                 tower_anomalies["time_distance"].idxmin()
             ]
 
-            if (
-                nearest_anomaly["time_distance"]
-                <= pd.Timedelta(hours=2)
-            ):
-                kpi_abnormal = bool(
-                    nearest_anomaly["is_anomaly"]
-                )
+            if nearest_anomaly["time_distance"] <= pd.Timedelta(hours=2):
+                anomaly_value = nearest_anomaly["is_anomaly"]
+
+                if pd.notna(anomaly_value):
+                    kpi_abnormal = bool(anomaly_value)
 
         reasons = []
 
-        latency = float(nearest_kpi["latency"])
-        packet_loss = float(
-            nearest_kpi["packet_loss"]
+        latency = pd.to_numeric(
+        nearest_kpi["latency"],
+        errors="coerce",
         )
-        cpu = float(
-            nearest_kpi["cpu_usage"]
+
+        packet_loss = pd.to_numeric(
+        nearest_kpi["packet_loss"],
+        errors="coerce",
         )
-        memory = float(
-            nearest_kpi["memory_usage"]
+
+
+        cpu = pd.to_numeric(
+        nearest_kpi["cpu_usage"],
+        errors="coerce",
+        )
+
+        memory = pd.to_numeric(
+            nearest_kpi["memory_usage"],
+            errors="coerce",
         )
 
         if latency > 100:

@@ -44,11 +44,25 @@ def correlate_operational_events(
     # ---------------------------------------------------------
     # Determine simulated operational "now"
     # ---------------------------------------------------------
-    latest_event_time = max(
-        pd.to_datetime(event["timestamp"])
+    event_times = [
+        pd.to_datetime(
+            event.get("timestamp"),
+            errors="coerce",
+        )
         for event in operational_events
         if event.get("timestamp") is not None
-    )
+    ]
+
+    event_times = [
+        timestamp
+        for timestamp in event_times
+        if pd.notna(timestamp)
+    ]
+
+    if not event_times:
+        return []
+
+    latest_event_time = max(event_times)
     # ---------------------------------------------------------
     # Keep only recent events
     # ---------------------------------------------------------
@@ -65,7 +79,13 @@ def correlate_operational_events(
         if event_time is None:
             continue
 
-        event_time = pd.to_datetime(event_time)
+        event_time = pd.to_datetime(
+            event_time,
+            errors="coerce",
+        )
+
+        if pd.isna(event_time):
+            continue
 
         age_hours = (
             latest_event_time - event_time
@@ -140,3 +160,63 @@ def correlate_operational_events(
         key=lambda x: x["event_timestamp"],
         reverse=True,
     )
+def test_invalid_timestamps_are_ignored(monkeypatch):
+    monkeypatch.setattr(
+        incident_correlation,
+        "recent_incidents",
+        lambda limit: [],
+    )
+
+    events = [
+        {
+            "trigger_investigation": True,
+            "timestamp": "not-a-date",
+            "tower_id": "TWR-1001",
+        }
+    ]
+
+    result = incident_correlation.correlate_operational_events(
+        events
+    )
+
+    assert result == []
+def test_invalid_timestamps_are_ignored(monkeypatch):
+    monkeypatch.setattr(
+        incident_correlation,
+        "recent_incidents",
+        lambda limit: [],
+    )
+
+    events = [
+        {
+            "trigger_investigation": True,
+            "timestamp": "not-a-date",
+            "tower_id": "TWR-1001",
+        }
+    ]
+
+    result = incident_correlation.correlate_operational_events(
+        events
+    )
+
+    assert result == []    
+def test_invalid_timestamps_are_ignored(monkeypatch):
+    monkeypatch.setattr(
+        incident_correlation,
+        "recent_incidents",
+        lambda limit: [],
+    )
+
+    events = [
+        {
+            "trigger_investigation": True,
+            "timestamp": "not-a-date",
+            "tower_id": "TWR-1001",
+        }
+    ]
+
+    result = incident_correlation.correlate_operational_events(
+        events
+    )
+
+    assert result == []    
