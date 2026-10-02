@@ -518,6 +518,19 @@ if page == "📡 Live NOC":
             "status",
         ]
     ].copy()
+    # ---------------------------------------------------------
+    # Active Incident Correlation
+    # ---------------------------------------------------------
+
+    def get_active_incident_display(tower_id):
+        incident = get_active_incident_by_tower(tower_id)
+        if incident is None:
+            return "None"
+        return f"#{incident.id} — {incident.case_status}"
+
+    tower_status["active_incident"] = tower_status["tower_id"].apply(
+        get_active_incident_display
+    )
 
     tower_status = tower_status.rename(
         columns={
@@ -527,6 +540,7 @@ if page == "📡 Live NOC":
             "packet_loss": "Packet Loss (%)",
             "network_traffic": "Traffic (%)",
             "status": "Status",
+            "active_incident": "Active Incident",
         }
     )
 
@@ -534,6 +548,7 @@ if page == "📡 Live NOC":
         [
             "Tower",
             "Last Update",
+            "Active Incident",
             "Latency (ms)",
             "Packet Loss (%)",
             "Traffic (%)",
@@ -561,12 +576,7 @@ if page == "📡 Live NOC":
     k1, k2 = st.columns(2)
 
     with k1:
-
-        latency_chart = (
-            network
-            .sort_values("timestamp")
-            .tail(300)
-        )
+        latency_chart = network.sort_values("timestamp").tail(300)
 
         st.plotly_chart(
             px.line(
@@ -574,18 +584,13 @@ if page == "📡 Live NOC":
                 x="timestamp",
                 y="latency",
                 color="tower_id",
-                title="Network Latency"
+                title="Network Latency",
             ),
             width="stretch",
         )
 
     with k2:
-
-        packet_chart = (
-            network
-            .sort_values("timestamp")
-            .tail(300)
-        )
+        packet_chart = network.sort_values("timestamp").tail(300)
 
         st.plotly_chart(
             px.line(
@@ -593,7 +598,7 @@ if page == "📡 Live NOC":
                 x="timestamp",
                 y="packet_loss",
                 color="tower_id",
-                title="Packet Loss"
+                title="Packet Loss",
             ),
             width="stretch",
         )
