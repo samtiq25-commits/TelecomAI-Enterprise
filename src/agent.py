@@ -3587,8 +3587,8 @@ def list_investigation_threads(limit=50):
             "thread_id"
         )
 
-        if thread_id:
-            threads[thread_id] = checkpoint
+        if thread_id and thread_id not in threads:
+           threads[thread_id] = checkpoint
 
     return threads
 
