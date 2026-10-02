@@ -17,3 +17,4 @@ openai>=1.100.0
 bcrypt>=4.2
 sqlalchemy>=2.0
 psycopg[binary]>=3.2
+faster-whisper>=1.1.0

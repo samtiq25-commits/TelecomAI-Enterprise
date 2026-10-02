@@ -1,3 +1,4 @@
+import os
 import sqlite3
 from typing import TypedDict
 from langgraph.graph import StateGraph, START, END
@@ -127,6 +128,24 @@ def find_equipment_for_investigation(
     }
 
 
+def _safe_numeric(value, default=None):
+    """Return a finite numeric value or the supplied default."""
+    import math
+
+    if value is None:
+        return default
+
+    try:
+        value = float(value)
+    except (TypeError, ValueError):
+        return default
+
+    if not math.isfinite(value):
+        return default
+
+    return value
+
+
 class State(TypedDict, total=False):
     request_type: str
     selected_agent: str
@@ -224,29 +243,29 @@ def check_kpis(state: State):
 
     checks = []
 
-    latency = float(anomaly.get("latency", 0))
-    packet_loss = float(anomaly.get("packet_loss", 0))
-    cpu = float(anomaly.get("cpu_usage", 0))
-    memory = float(anomaly.get("memory_usage", 0))
-    call_drop = float(anomaly.get("call_drop_rate", 0))
-    signal = float(anomaly.get("signal_strength", 0))
+    latency = _safe_numeric(anomaly.get("latency"))
+    packet_loss = _safe_numeric(anomaly.get("packet_loss"))
+    cpu = _safe_numeric(anomaly.get("cpu_usage"))
+    memory = _safe_numeric(anomaly.get("memory_usage"))
+    call_drop = _safe_numeric(anomaly.get("call_drop_rate"))
+    signal = _safe_numeric(anomaly.get("signal_strength"))
 
-    if latency > 30:
+    if latency is not None and latency > 30:
         checks.append(f"High latency detected ({latency:.2f} ms)")
 
-    if packet_loss > 2:
+    if packet_loss is not None and packet_loss > 2:
         checks.append(f"Elevated packet loss detected ({packet_loss:.2f}%)")
 
-    if cpu > 80:
+    if cpu is not None and cpu > 80:
         checks.append(f"High CPU utilization detected ({cpu:.1f}%)")
 
-    if memory > 80:
+    if call_drop > 2:
         checks.append(f"High memory utilization detected ({memory:.1f}%)")
 
-    if call_drop > 2:
+    if call_drop is not None and call_drop > 2:
         checks.append(f"Elevated call-drop rate detected ({call_drop:.2f}%)")
 
-    if signal < -95:
+    if signal is not None and signal < -95:
         checks.append(f"Weak signal detected ({signal:.2f} dBm)")
 
     if anomaly.get("is_anomaly"):
@@ -379,9 +398,12 @@ def verify_service_recovery(state: State):
     print("RECOVERY BASELINE:", recovery_baseline)
     print("CURRENT LATENCY:", latency)
     print("CURRENT PACKET LOSS:", packet_loss)
-
-    avg_latency = recovery_baseline.get("avg_latency")
-    avg_packet_loss = recovery_baseline.get("avg_packet_loss")
+    avg_latency = _safe_numeric(
+        recovery_baseline.get("avg_latency")
+    )
+    avg_packet_loss = _safe_numeric(
+        recovery_baseline.get("avg_packet_loss")
+    )
 
     failed_checks = []
     baseline_checks = []
@@ -410,11 +432,11 @@ def verify_service_recovery(state: State):
     # ---------------------------------------------------------
 
     if avg_latency is not None:
-        latency_change = latency - float(avg_latency)
+        latency_change = latency - avg_latency
 
         baseline_checks.append(
             f"current latency {latency:.2f} ms vs "
-            f"recent average {float(avg_latency):.2f} ms"
+            f"recent average {avg_latency:.2f} ms"
         )
 
         if latency_change > 5:
@@ -424,13 +446,11 @@ def verify_service_recovery(state: State):
             )
 
     if avg_packet_loss is not None:
-        packet_loss_change = (
-            packet_loss - float(avg_packet_loss)
-        )
+        packet_loss_change = packet_loss - avg_packet_loss
 
         baseline_checks.append(
             f"current packet loss {packet_loss:.2f}% vs "
-            f"recent average {float(avg_packet_loss):.2f}%"
+            f"recent average {avg_packet_loss:.2f}%"
         )
 
         if packet_loss_change > 0.5:
@@ -493,17 +513,26 @@ def collect_additional_evidence(state: State):
     anomaly = state.get("anomaly", {})
 
     additional_evidence = []
+    recovery_baseline = None
 
     # ---------------------------------------------------------
     # 1. Current network traffic
     # ---------------------------------------------------------
-    traffic = float(anomaly.get("network_traffic", 0))
+    traffic = _safe_numeric(
+        anomaly.get("network_traffic")
+    )
 
-    if traffic > 80:
+    if traffic is None:
+        additional_evidence.append(
+            "Current network traffic data is unavailable."
+        )
+
+    elif traffic > 80:
         additional_evidence.append(
             f"Current network traffic is {traffic:.1f}%, "
             "which may indicate traffic saturation."
         )
+
     else:
         additional_evidence.append(
             f"Current network traffic is {traffic:.1f}%."
@@ -517,17 +546,24 @@ def collect_additional_evidence(state: State):
     ].sort_values("timestamp").tail(10)
 
     if not tower_history.empty:
+        avg_latency = _safe_numeric(
+            tower_history["latency"].mean()
+        )
 
-        avg_latency = tower_history["latency"].mean()
-        avg_packet_loss = tower_history["packet_loss"].mean()
-        avg_traffic = tower_history["network_traffic"].mean()
+        avg_packet_loss = _safe_numeric(
+            tower_history["packet_loss"].mean()
+        )
+
+        avg_traffic = _safe_numeric(
+            tower_history["network_traffic"].mean()
+        )
+
         recovery_baseline = {
-            "avg_latency": float(avg_latency),
-            "avg_packet_loss": float(avg_packet_loss),
-            "avg_traffic": float(avg_traffic),
+            "avg_latency": avg_latency,
+            "avg_packet_loss": avg_packet_loss,
+            "avg_traffic": avg_traffic,
             "sample_size": int(len(tower_history))
         }
-
         additional_evidence.append(
             f"Recent average latency for {tower_id}: "
             f"{avg_latency:.2f} ms."
@@ -705,11 +741,15 @@ def collect_additional_evidence(state: State):
 
                     if not backhaul_events.empty:
                         latest_backhaul = backhaul_events.iloc[-1]
-                        backhaul_utilization = float(
-                            latest_backhaul["backhaul_utilization"]
+                        backhaul_utilization = _safe_numeric(
+                            latest_backhaul.get("backhaul_utilization")
                         )
-
-                        if backhaul_utilization >= 85:
+                        if backhaul_utilization is None:
+                            additional_evidence.append(
+                                f"Backhaul investigation: utilization data "
+                                f"is unavailable for {tower_id}."
+                            )
+                        elif backhaul_utilization >= 85:
                             additional_evidence.append(
                                 f"Backhaul investigation: {tower_id} "
                                 f"latest utilization is "
@@ -723,11 +763,6 @@ def collect_additional_evidence(state: State):
                                 f"{backhaul_utilization:.1f}%, "
                                 "with no high-utilization condition detected."
                             )
-                    else:
-                        additional_evidence.append(
-                            f"No backhaul events were found for {tower_id}."
-                        )
-
                     # -------------------------------------------------
                     # Maintenance investigation
                     # -------------------------------------------------
@@ -1139,14 +1174,13 @@ def root_cause_analysis(state: State):
     # ---------------------------------------------------------
     # 1. Network KPI values
     # ---------------------------------------------------------
-
-    latency = float(anomaly.get("latency", 0))
-    packet_loss = float(anomaly.get("packet_loss", 0))
-    cpu = float(anomaly.get("cpu_usage", 0))
-    memory = float(anomaly.get("memory_usage", 0))
-    call_drop = float(anomaly.get("call_drop_rate", 0))
-    signal = float(anomaly.get("signal_strength", 0))
-    traffic = float(anomaly.get("network_traffic", 0))
+    latency = _safe_numeric(anomaly.get("latency"))
+    packet_loss = _safe_numeric(anomaly.get("packet_loss"))
+    cpu = _safe_numeric(anomaly.get("cpu_usage"))
+    memory = _safe_numeric(anomaly.get("memory_usage"))
+    call_drop = _safe_numeric(anomaly.get("call_drop_rate"))
+    signal = _safe_numeric(anomaly.get("signal_strength"))
+    traffic = _safe_numeric(anomaly.get("network_traffic"))
 
     # ---------------------------------------------------------
     # 2. Extract RAG knowledge-base guidance
@@ -1169,54 +1203,54 @@ def root_cause_analysis(state: State):
 
     if kpi_status == "ABNORMAL":
 
-        if latency > 30:
+        if latency is not None and latency > 30:
             evidence_count += 1
             supporting_evidence.append(
                 f"Live KPI evidence: latency is elevated at "
                 f"{latency:.2f} ms."
             )
 
-        if packet_loss > 2:
+        if packet_loss is not None and packet_loss > 2:
             evidence_count += 1
             supporting_evidence.append(
                 f"Live KPI evidence: packet loss is elevated at "
                 f"{packet_loss:.2f}%."
             )
 
-        if traffic > 80:
-            evidence_count += 1
-            supporting_evidence.append(
-                f"Live KPI evidence: network traffic is high at "
-                f"{traffic:.1f}%."
-            )
+    if traffic is not None and traffic > 80:
+        evidence_count += 1
+        supporting_evidence.append(
+            f"Live KPI evidence: network traffic is high at "
+            f"{traffic:.1f}%."
+        )
 
-        if cpu > 80:
-            evidence_count += 1
-            supporting_evidence.append(
-                f"Live KPI evidence: CPU utilization is high at "
-                f"{cpu:.1f}%."
-            )
+    if cpu is not None and cpu > 80:
+        evidence_count += 1
+        supporting_evidence.append(
+            f"Live KPI evidence: CPU utilization is high at "
+            f"{cpu:.1f}%."
+        )
 
-        if memory > 80:
-            evidence_count += 1
-            supporting_evidence.append(
-                f"Live KPI evidence: memory utilization is high at "
-                f"{memory:.1f}%."
-            )
+    if memory is not None and memory > 80:
+        evidence_count += 1
+        supporting_evidence.append(
+            f"Live KPI evidence: memory utilization is high at "
+            f"{memory:.1f}%."
+        )
 
-        if call_drop > 2:
-            evidence_count += 1
-            supporting_evidence.append(
-                f"Live KPI evidence: call-drop rate is elevated at "
-                f"{call_drop:.2f}%."
-            )
+    if call_drop is not None and call_drop > 2:
+        evidence_count += 1
+        supporting_evidence.append(
+            f"Live KPI evidence: call-drop rate is elevated at "
+            f"{call_drop:.2f}%."
+        )
 
-        if signal < -95:
-            evidence_count += 1
-            supporting_evidence.append(
-                f"Live KPI evidence: signal strength is weak at "
-                f"{signal:.1f}."
-            )
+    if signal is not None and signal < -95:
+        evidence_count += 1
+        supporting_evidence.append(
+            f"Live KPI evidence: signal strength is weak at "
+            f"{signal:.1f}."
+        )
 
     # ---------------------------------------------------------
     # 4. Network root-cause hypotheses
@@ -1224,12 +1258,22 @@ def root_cause_analysis(state: State):
 
     if kpi_status == "ABNORMAL":
 
-        if latency > 30 and packet_loss > 2:
+        if (
+            latency is not None
+            and packet_loss is not None
+            and latency > 30
+            and packet_loss > 2
+        ):
             possible_causes.append(
                 "Potential network congestion or transport degradation"
             )
 
-        if traffic > 80 and latency > 30:
+        if (
+            traffic is not None
+            and latency is not None
+            and traffic > 80
+            and latency > 30
+        ):
             possible_causes.append(
                 "Potential network traffic saturation"
             )
@@ -1292,30 +1336,33 @@ def root_cause_analysis(state: State):
                 part = part.strip()
 
                 if "errors=" in part.lower():
-                    errors = float(
+                    errors = _safe_numeric(
                         part.split("=", 1)[1]
                     )
 
                 elif "cpu=" in part.lower():
-                    equipment_cpu = float(
-                        part.split("=", 1)[1]
-                        .replace("%", "")
+                    equipment_cpu = _safe_numeric(
+                        part.split("=", 1)[1].replace("%", "")
                     )
 
                 elif "memory=" in part.lower():
-                    equipment_memory = float(
-                        part.split("=", 1)[1]
-                        .replace("%", "")
+                    equipment_memory = _safe_numeric(
+                        part.split("=", 1)[1].replace("%", "")
                     )
 
                 elif "temperature=" in part.lower():
-                    temperature = float(
+                    temperature = _safe_numeric(
                         part.split("=", 1)[1]
                     )
 
                 elif "failure=" in part.lower():
-                    failure = int(
-                        float(part.split("=", 1)[1])
+                    failure_value = _safe_numeric(
+                        part.split("=", 1)[1]
+                    )
+                    failure = (
+                        int(failure_value)
+                        if failure_value is not None
+                        else None
                     )
 
             # Error count
@@ -1917,7 +1964,6 @@ def root_cause_analysis(state: State):
             "available evidence."
         )
     root_cause_category = "network_degradation"
-
 
     if any(
         "equipment" in str(cause).lower()
@@ -3372,8 +3418,9 @@ def equipment_investigation(state: State):
 def route_after_network_tool_decision(state: State):
     return state.get("tool_decision", "skip")
 
-_CHECKPOINT_DB_PATH = (
-    r"D:\TelecomAI_Enterprise_Voice_Customer_Employee\telecomai.db"
+_CHECKPOINT_DB_PATH = os.getenv(
+    "LANGGRAPH_CHECKPOINT_DB",
+    "telecomai.db"
 )
 
 _checkpointer = SqliteSaver(
@@ -3382,6 +3429,8 @@ _checkpointer = SqliteSaver(
         check_same_thread=False
     )
 )
+
+
 def build_agent():
     graph = StateGraph(State)
     graph.add_node(
@@ -3506,13 +3555,7 @@ def build_agent():
     )
 
     graph.add_edge("report", END)
-
-    checkpointer = SqliteSaver(
-        sqlite3.connect(
-            r"D:\TelecomAI_Enterprise_Voice_Customer_Employee\telecomai.db",
-            check_same_thread=False
-        )
-    )
+    checkpointer = _checkpointer
 
     return graph.compile(
         checkpointer=checkpointer

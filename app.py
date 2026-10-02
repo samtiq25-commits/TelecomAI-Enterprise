@@ -968,8 +968,8 @@ if page == "📡 Live NOC":
                 processed = []
 
                 incident_correlations = correlate_and_audit_operational_events(
-                       operational_events
-               )
+                    operational_events
+                )
 
                 for correlation in incident_correlations:
 
@@ -978,18 +978,6 @@ if page == "📡 Live NOC":
                         severity = correlation[
                             "operational_severity"
                         ]
-
-                        tower_id = correlation["tower_id"]
-
-                        issue = (
-                            f"Operational event detected at "
-                            f"{tower_id}: "
-                            f"{correlation['reason']}"
-                        )
-
-                        # ---------------------------------------------------------
-                        # Create the incident
-                        # ---------------------------------------------------------
 
                         tower_id = correlation["tower_id"]
 
@@ -1976,31 +1964,11 @@ elif page == "💳 Billing Fraud Intelligence":
                 resource_id=str(review_transaction),
             )
             if review_decision == "Approved":
-                save_incident({
-                    "incident_type": "FRAUD",
-                    "issue": (
-                        f"Suspicious billing transaction {review_transaction}"
-                    ),
-                    "tower_id": None,
-                    "diagnosis": (
-                        f"Fraud detection model classified the transaction as "
-                        f"{selected_transaction['risk_level']} risk with "
-                        f"{selected_transaction['fraud_probability']:.4f} "
-                        f"fraud probability."
-                    ),
-                    "recommendation": (
-                        "Escalate the transaction for fraud investigation."
-                    ),
-                    "complaint_analysis": {
-                        "severity": selected_transaction["risk_level"]
-                    },
-                    "root_cause_confidence": "HIGH",
-                })
-            st.success(
-                f"Transaction {review_transaction} marked as "
-                f"{review_decision}."
-            )
-    st.divider()
+                st.success(
+                    f"Transaction {review_transaction} approved and logged.")
+            elif review_decision == "Rejected":
+                st.success(
+                    f"Transaction {review_transaction} rejected and logged.")
 
     # Manual transaction risk analysis
     st.subheader("🔍 Analyze a Transaction")
@@ -2347,10 +2315,14 @@ elif page == "LangGraph Agent":
 
         result = agent.invoke(
             {
-                "issue": "...",
-                "tower_id": "...",
-                "actor": "...",
-                "actor_role": "..."
+                "issue": issue,
+                "tower_id": tower,
+                "actor": st.session_state.get("actor", "admin"),
+                "actor_role": st.session_state.get(
+                    "actor_role",
+                    "Network Engineer"
+                ),
+                "anomaly": anomaly,
             },
             config=config,
         )
@@ -5631,10 +5603,9 @@ if page == "🤖 AI Evaluation":
 
                 r1, r2, r3, r4 = st.columns(4)
 
-                r1.metric(
-                    "Actual Root Cause",
-                    actual_root_cause,
-                )
+                with r1:
+                    st.markdown("**Actual Root Cause**")
+                    st.info(actual_root_cause)
 
                 r2.metric(
                     "Root Cause Confidence",
@@ -6289,20 +6260,26 @@ elif page == "📊 Observability":
             "NOT_RECOVERED",
         }
     )
+
     r1, r2, r3 = st.columns(3)
+
     with r1:
-        st.markdown(
-            "**Actual Root Cause Confidence**"
+        st.metric(
+            "Resolved",
+            resolved_count,
         )
-        actual_root_cause,
 
     with r2:
-        st.markdown("**Actual Outcome**")
-        actual_outcome,
+        st.metric(
+            "Not Recovered",
+            not_recovered_count,
+        )
 
     with r3:
-        st.markdown("**Expected Outcome**")
-        expected_outcome,
+        st.metric(
+            "Pending",
+            pending_count,
+        )
 
     # ---------------------------------
     # Outcome Comparison
